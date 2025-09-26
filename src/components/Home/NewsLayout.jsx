@@ -61,7 +61,7 @@ export default function NewsLayout({ blog }) {
       </main>
 
       {/* Right Sidebar */}
-      <aside className="w-full md:w-1/5 rounded-lg">
+      {/* <aside className="w-full md:w-1/5 rounded-lg">
         <div className="flex flex-col gap-2">
           <Link
             href="https://trk.clickgenie.in/click?campaign_id=34900&pub_id=5742&p1=%7Byour-transaction-id%7D&source=%7Byour-sub-aff-id%7D"
@@ -74,7 +74,7 @@ export default function NewsLayout({ blog }) {
             />
           </Link>
         </div>
-      </aside>
+      </aside> */}
     </div>
   );
 }

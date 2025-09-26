@@ -43,11 +43,13 @@ const { firstPart, remainingPart } = splitAfterThirdParagraph(data.content);
 
   return (
     <div className=" mx-auto p-4 flex flex-col md:flex-row gap-6">
-      <div className=" w-full md:w-1/5 order-2 md:order-1">
-        <SideBar pathname={pathname} data={data} />
-      </div>
 
-      <div className=" w-full md:w-3/5 shadow-md p-4 order-1 md:order-2   overflow-y-auto scrollbar-hide">
+      {/* asidbar comment */}
+      {/* <div className=" w-full md:w-1/5 order-2 md:order-1">
+        <SideBar pathname={pathname} data={data} />
+      </div> */}
+
+      <div className=" w-full md:w-3/5 mx-auto shadow-md p-4 order-1 md:order-2   overflow-y-auto scrollbar-hide">
         <h1 className="text-2xl text-gray-600  font-bold text-center mb-4">
           {data.title}
         </h1>
@@ -247,9 +249,11 @@ const { firstPart, remainingPart } = splitAfterThirdParagraph(data.content);
 
       </div>
 
-      <div className=" w-full md:w-1/5  order-3 md:order-3 ">
+
+{/* aside bar comment */}
+      {/* <div className=" w-full md:w-1/5  order-3 md:order-3 ">
         <RightSideBar pathname={pathname} data={data}/>
-      </div>
+      </div> */}
     </div>
   );
 };

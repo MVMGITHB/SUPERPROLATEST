@@ -24,11 +24,11 @@ export const BlogHome = ({ url }) => {
 
   return (
     <div className=" mx-auto p-6 flex flex-col md:flex-row gap-6">
-      <div className="w-full md:w-1/5">
+      {/* <div className="w-full md:w-1/5">
         <LeftSidebar />
-      </div>
+      </div> */}
 
-     <div className="w-full md:w-3/5 shadow-md p-4">
+     <div className="w-full md:w-3/5 mx-auto shadow-md p-4">
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
     {cards && cards.length > 0 ? (
       [...cards]
@@ -62,9 +62,9 @@ export const BlogHome = ({ url }) => {
 </div>
 
 
-      <div className=" w-full md:w-1/5">
+      {/* <div className=" w-full md:w-1/5">
         <RightSide />
-      </div>
+      </div> */}
     </div>
   );
 };
