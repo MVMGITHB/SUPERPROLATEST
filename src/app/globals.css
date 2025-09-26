@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+  }
+}
+
+body {
+  background: #f4f4f5;
+  color: var(--foreground);
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: "Roboto", sans-serif;
+}
+
+.article {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+.article table {
+  margin: 1rem auto;
+  border-collapse: collapse;
+  width: auto;
+  max-width: 100%;
+}
+
+.article table th,
+.article table td {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  text-align: center;
+}
+
+.article a {
+  color: #1d4ed8; 
+  text-decoration: underline;
+}
+
+.article a:hover {
+  color: #2563eb;
+}
+
+
+
+
+.carousel .control-dots {
+    justify-content: center;
+    display: flex;
+    position: absolute !important;
+    bottom: 40px !important;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+.scrollbar-hide {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; /* Important for momentum scrolling on iOS */
+}
+
+/* .carousel .control-next.control-arrow:before{
+  color: red !important;
+  background-color: gray;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.carousel.carousel-slider .control-arrow{
+  background-color: rgba(255, 0, 43, 0.815) !important;
+  height: 50px !important;
+  width: 50px !important;
+  top:40% !important;
+  border-radius: 50% !important;
+}
