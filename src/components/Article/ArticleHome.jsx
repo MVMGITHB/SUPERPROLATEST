@@ -60,7 +60,7 @@ const { firstPart, remainingPart } = splitAfterThirdParagraph(data.content);
         />
          
 
-         {
+         {/* {
           data?.Ads[2]?(<>
                 <AnimatedLink
                     text={data?.Ads[2].text1[0]}
@@ -82,7 +82,7 @@ const { firstPart, remainingPart } = splitAfterThirdParagraph(data.content);
             
             </>
           )
-         }
+         } */}
 
 
 
@@ -158,7 +158,7 @@ const { firstPart, remainingPart } = splitAfterThirdParagraph(data.content);
       )}
     </div>
 
-     {
+     {/* {
           data?.Ads[3]?(<>
                 <AnimatedLink
                     text={data?.Ads[3].text1[0]}
@@ -180,7 +180,7 @@ const { firstPart, remainingPart } = splitAfterThirdParagraph(data.content);
             
             </>
           )
-         }
+         } */}
 
 
                  <div className="flex flex-col md:flex-row justify-between items-center gap-4 p-4">
