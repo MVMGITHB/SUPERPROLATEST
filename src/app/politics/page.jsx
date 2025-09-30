@@ -1,27 +1,26 @@
 // Metadata for SEO and social sharing
 export const metadata = {
-  title: "MVM Business Services | Data-Driven Digital Marketing Agency",
-  description: "Grow your brand with MVM Business Services – experts in digital marketing, SEO, social media, and web development.",
+  title:
+    " SuperNPro Politics | Latest Political News, Opinions & Global Affairs",
+  description:
+    "Stay updated with SuperNPro’s in-depth coverage of political developments, elections, policies, and global diplomacy.",
   metadataBase: new URL("https://supernpro.com"),
   alternates: {
     canonical: "./",
   },
   // robots: {
-  //   index: false, 
-  //   follow: false, 
+  //   index: false,
+  //   follow: false,
   // },
 };
 
-import { Blog } from "@/components/blog/Blog"
+import { Blog } from "@/components/blog/Blog";
 const page = () => {
-
-
-
   return (
     <div>
-        <Blog url="politics"/>
+      <Blog url="politics" />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

@@ -1,26 +1,24 @@
 export const metadata = {
-  title: "MVM Business Services | Data-Driven Digital Marketing Agency",
-  description: "Grow your brand with MVM Business Services – experts in digital marketing, SEO, social media, and web development.",
+  title: "SuperNPro Entertainment | Celebrity News, Movies & Pop Culture",
+  description:
+    "Dive into the world of entertainment with SuperNPro - covering movies, music, celebrity gossip, and pop culture news.",
   metadataBase: new URL("https://supernpro.com"),
   alternates: {
     canonical: "./",
   },
   // robots: {
-  //   index: false, 
-  //   follow: false, 
+  //   index: false,
+  //   follow: false,
   // },
 };
 
-import { Blog } from "@/components/blog/Blog"
+import { Blog } from "@/components/blog/Blog";
 const page = () => {
-
-
-
   return (
     <div>
-        <Blog url="entertainment"/>
+      <Blog url="entertainment" />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

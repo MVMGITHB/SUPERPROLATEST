@@ -1,27 +1,24 @@
-
 export const metadata = {
-  title: "MVM Business Services | Data-Driven Digital Marketing Agency",
-  description: "Grow your brand with MVM Business Services – experts in digital marketing, SEO, social media, and web development.",
+  title: " SuperNPro Fashion & Lifestyle | Fashion News & Lifestyle Tips",
+  description:
+    "Explore fashion trends, beauty tips, wellness guides, and lifestyle inspiration curated for modern living.",
   metadataBase: new URL("https://supernpro.com"),
   alternates: {
     canonical: "./",
   },
   // robots: {
-  //   index: false, 
-  //   follow: false, 
+  //   index: false,
+  //   follow: false,
   // },
 };
 
-import { Blog } from "@/components/blog/Blog"
+import { Blog } from "@/components/blog/Blog";
 const page = () => {
-
-
-
   return (
     <div>
-        <Blog url="fashion-lifestyle"/>
+      <Blog url="fashion-lifestyle" />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

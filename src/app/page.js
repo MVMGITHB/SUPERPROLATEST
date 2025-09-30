@@ -1,7 +1,7 @@
 
 export const metadata = {
-  title: "MVM Business Services | Data-Driven Digital Marketing Agency",
-  description: "Grow your brand with MVM Business Services – experts in digital marketing, SEO, social media, and web development.",
+  title: "SuperNPro News | Breaking Stories, Insights & Global Headlines",
+  description: "Stay informed with SuperNPro—your source for breaking news, trending stories, expert analysis, and global updates across politics, tech, business, and culture.",
   metadataBase: new URL("https://supernpro.com"),
   alternates: {
     canonical: "./",
