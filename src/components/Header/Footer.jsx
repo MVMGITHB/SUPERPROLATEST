@@ -28,6 +28,7 @@ export default function Footer() {
             <li><Link href="#" className="hover:text-white">News</Link></li>
             <li><Link href="#" className="hover:text-white">India Global</Link></li>
             <li><Link href="#" className="hover:text-white">Politics</Link></li>
+            <li><Link href="/useservices">Use & Services</Link></li>
           </ul>
         </div>
 
