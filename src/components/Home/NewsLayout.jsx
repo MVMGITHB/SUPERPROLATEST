@@ -61,20 +61,20 @@ export default function NewsLayout({ blog }) {
       </main>
 
       {/* Right Sidebar */}
-      {/* <aside className="w-full md:w-1/5 rounded-lg">
+      <aside className="w-full md:w-1/5 rounded-lg">
         <div className="flex flex-col gap-2">
           <Link
-            href="https://trk.clickgenie.in/click?campaign_id=34900&pub_id=5742&p1=%7Byour-transaction-id%7D&source=%7Byour-sub-aff-id%7D"
+            href="https://tracking.ajio.business/click?pid=87&offer_id=2&sub1=pass_your_subid%20&redirect=https://www.ajio.com/s/50to90percentoff-140961"
             target="_blank"
           >
             <img
-              src="./tataNew.jpeg"
+              src="./ajionew.jpeg"
               alt="Tata Neu Event"
               className="w-full h-[480px] object-conver rounded-md"
             />
           </Link>
         </div>
-      </aside> */}
+      </aside>
     </div>
   );
 }

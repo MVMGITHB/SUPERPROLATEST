@@ -60,22 +60,26 @@ export const SideBar = ({ pathname, data }) => {
 
 
         {pathname === '/automobile/fastag-annual-pass' ? (
-          <><Link href="https://www.cars24.com/sell-marketing/?utm_source=affiliate&utm_medium=email_ob&utm_campaign=mv2341&utm_term=super01" target="_blank">
-
+          <>  <Link
+            href="https://tracking.ajio.business/click?pid=87&offer_id=2&sub1=pass_your_subid%20&redirect=https://www.ajio.com/s/50to90percentoff-140961"
+            target="_blank"
+          >
             <img
-              src="https://akm-img-a-in.tosshub.com/indiatoday/styles/medium_crop_simple/public/2024-08/cars24_launched_new_feature_orbit_and_upgraded_to_become_the_worlds_largest_auto_super_app.jpeg?VersionId=SOnnUo5lpdPW9IuquXwhjWUAsoCVY52q&size=750:*"
-              alt="Promotion"
-              className="w-full  object-cover"
+              src="/ajionew.jpeg"
+              alt="Tata Neu Event"
+              className="w-full h-[480px] object-conver rounded-md"
             />
           </Link></>
         ) : (
 
-          <Link href="https://trk.clickgenie.in/click?campaign_id=34900&pub_id=5742&p1=%7Byour-transaction-id%7D&source=%7Byour-sub-aff-id%7D" target="_blank">
-
+           <Link
+            href="https://tracking.ajio.business/click?pid=87&offer_id=2&sub1=pass_your_subid%20&redirect=https://www.ajio.com/s/50to90percentoff-140961"
+            target="_blank"
+          >
             <img
-              src="../tataNew.jpeg"
-              alt="Ad Image"
-              className="w-full  object-cover"
+              src="/ajionew.jpeg"
+              alt="Tata Neu Event"
+              className="w-full h-[480px] object-conver rounded-md"
             />
           </Link>
           // <Link href="http://trk.yasd.in/click?campaign_id=166&pub_id=945" target="_blank">

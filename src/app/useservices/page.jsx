@@ -1,10 +1,11 @@
 // import React from 'react'
 
-// import UseServices from "@/components/useservice/UseServices"
+import UseServices from "@/components/useService/UseServices"
+
 const page = () => {
   return (
     <div>
-    {/* <UseServices/>  */}
+    <UseServices/> 
     {/* update use */}
     </div>
   )

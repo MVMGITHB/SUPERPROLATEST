@@ -16,15 +16,18 @@ const Summary = ({ blog }) => {
   return (
     <div className="mx-auto flex flex-col md:flex-row gap-6">
       <aside className="w-full md:w-1/5">
-        {/* <div className="sticky top-4 bg-gray-100 p-4 rounded-lg shadow-md ">
-          <Link href="https://trk.clickgenie.in/click?campaign_id=34900&pub_id=5742&p1=%7Byour-transaction-id%7D&source=%7Byour-sub-aff-id%7D" target="_blank">
-          <img
-            src="./tataNew.jpeg"
-            alt="Tata Neu Event"
-            className="w-full object-cover rounded-md "
-          />
+        <div className="sticky top-4 bg-gray-100 p-4 rounded-lg shadow-md ">
+           <Link
+            href="https://tracking.ajio.business/click?pid=87&offer_id=2&sub1=pass_your_subid%20&redirect=https://www.ajio.com/s/50to90percentoff-140961"
+            target="_blank"
+          >
+            <img
+              src="./ajionew.jpeg"
+              alt="Tata Neu Event"
+              className="w-full h-[480px] object-conver rounded-md"
+            />
           </Link>
-        </div> */}
+        </div>
         
       </aside>
 
