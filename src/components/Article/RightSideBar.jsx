@@ -12,7 +12,7 @@ export const RightSideBar = ({ pathname,data }) => {
   ]
   return (
     <div className="w-full flex flex-col gap-6 p-2">
-      <div className="w-full bg-white shadow-md rounded-xl overflow-hidden">
+      {/* <div className="w-full bg-white shadow-md rounded-xl overflow-hidden">
 
 
 
@@ -43,7 +43,7 @@ export const RightSideBar = ({ pathname,data }) => {
         }
 
 
-      </div>
+      </div> */}
 
       <div className="bg-white shadow-md rounded-xl overflow-hidden">
 

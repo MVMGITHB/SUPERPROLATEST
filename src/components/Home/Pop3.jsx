@@ -11,7 +11,7 @@ export default function Popup3({ data }) {
 
     useEffect(() => {
         const showTimer = setTimeout(() => setVisible(true), 8000);
-        const closeTimer = setTimeout(() => setShowClose(true), 11000);
+        const closeTimer = setTimeout(() => setShowClose(true), 8000);
         return () => {
             clearTimeout(showTimer);
             clearTimeout(closeTimer);
@@ -29,7 +29,7 @@ export default function Popup3({ data }) {
                 {showClose && (
                     <button
                         onClick={() => setVisible(false)}
-                        className="absolute cursor-pointer top-3 right-10 z-20 bg-white/80 hover:bg-white rounded-full p-1 transition"
+                        className="absolute cursor-pointer top-3 right-60 z-20 bg-white/80 hover:bg-white rounded-full p-1 transition"
                     >
                         <X size={20} className="text-black" />
                     </button>
