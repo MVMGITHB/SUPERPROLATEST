@@ -22,6 +22,16 @@ export default function Popup3({ data }) {
 
     return (
 
+
+        // <Link
+        //     href="https://tracking.ajio.business/click?pid=87&offer_id=2&sub1=pass_your_subid%20&redirect=https://www.ajio.com/s/50to90percentoff-140961"
+        //     target="_blank"
+        //   >
+        //     <img
+        //       src="./ajionew.jpeg"
+        //       alt="Tata Neu Event"
+        //       className="w-full h-[480px] object-conver rounded-md"
+        //     />
         
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm p-2">
             <div className="relative min-w-[65%] flex justify-center  rounded-2xl overflow-hidden">
@@ -39,7 +49,7 @@ export default function Popup3({ data }) {
                     href={
                         data.linkArray && data.linkArray[0]
                             ? data.linkArray[0]
-                            : 'https://spectrum.gotrackier.com/click?campaign_id=1201&pub_id=945&source=%7B2%7D'
+                            : 'https://tracking.ajio.business/click?pid=87&offer_id=2&sub1=pass_your_subid%20&redirect=https://www.ajio.com/s/50to90percentoff-140961'
                     }
                     target="_blank"
                     className="relative"
@@ -50,11 +60,15 @@ export default function Popup3({ data }) {
                             src={`${base_url}${data.images[0]}`}
                             alt="Popup"
                             className=" hidden md:block h-auto max-h-[60vh] object-contain rounded-2xl "
-                        /></>) : (<> <img
-                            src="/image1.png"
+                        /></>) : (<> 
+                        
+                        <img
+                            src="/ajionew.jpeg"
                             alt="Popup"
                             className="hidden md:block h-auto max-h-[60vh] object-contain rounded-2xl "
-                        /></>)
+                        />
+                        
+                        </>)
                     }
 
                       
@@ -85,7 +99,7 @@ export default function Popup3({ data }) {
                           !data.images[0] && !data.images[1] &&(
 
                             <img
-                            src="/image1.png"
+                            src="/ajionew.jpeg"
                             alt="Popup"
                             className=" block md:hidden h-auto max-h-[60vh] object-contain rounded-2xl "
                         />
