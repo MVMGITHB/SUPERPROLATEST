@@ -22,9 +22,10 @@ const Summary = ({ blog }) => {
             target="_blank"
           >
             <img
-              src="./ajionew.jpeg"
+              src="./ajionew.webp"
               alt="Tata Neu Event"
               className="w-full h-[480px] object-conver rounded-md"
+              loading="lazy"
             />
           </Link>
         </div>

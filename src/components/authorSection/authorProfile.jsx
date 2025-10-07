@@ -97,6 +97,7 @@ export default function AuthorPage({ slug }) {
                       }
                       alt={post.title}
                       className="w-full lg:w-48 h-32 object-cover rounded-xl"
+                      loading="lazy"
                     />
                     <div className="flex-1">
                       <h3 className="text-xl font-bold text-gray-900">

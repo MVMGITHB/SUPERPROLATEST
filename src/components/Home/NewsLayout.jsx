@@ -68,9 +68,10 @@ export default function NewsLayout({ blog }) {
             target="_blank"
           >
             <img
-              src="./ajionew.jpeg"
-              alt="Tata Neu Event"
+              src="./ajionew.webp"
+              alt="Ajio event"
               className="w-full h-[480px] object-conver rounded-md"
+              loading="lazy"
             />
           </Link>
         </div>

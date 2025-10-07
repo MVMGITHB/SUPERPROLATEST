@@ -42,6 +42,7 @@ export const BlogHome = ({ url }) => {
               src={`${base_url}${card.image}`}
               alt={card.title}
               className="w-full h-48 object-cover rounded-t-xl"
+              loading="lazy"
             />
             <div className="p-2 text-center">
               <Link

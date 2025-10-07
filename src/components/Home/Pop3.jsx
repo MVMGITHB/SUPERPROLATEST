@@ -60,12 +60,14 @@ export default function Popup3({ data }) {
                             src={`${base_url}${data.images[0]}`}
                             alt="Popup"
                             className=" hidden md:block h-auto max-h-[60vh] object-contain rounded-2xl "
+                            loading="lazy"
                         /></>) : (<> 
                         
                         <img
                             src="/ajionew.jpeg"
                             alt="Popup"
                             className="hidden md:block h-auto max-h-[60vh] object-contain rounded-2xl "
+                            loading="lazy"
                         />
                         
                         </>)
@@ -80,6 +82,7 @@ export default function Popup3({ data }) {
                             src={`${base_url}${data.images[1]}`}
                             alt="Popup"
                             className=" block md:hidden h-auto max-h-[60vh] object-contain rounded-2xl "
+                            loading="lazy"
                             />
                           )
                       }
@@ -91,6 +94,7 @@ export default function Popup3({ data }) {
                             src={`${base_url}${data.images[0]}`}
                             alt="Popup"
                             className=" block md:hidden h-auto max-h-[60vh] object-contain rounded-2xl "
+                            loading="lazy"
                             />
                           )
                       }
@@ -99,9 +103,10 @@ export default function Popup3({ data }) {
                           !data.images[0] && !data.images[1] &&(
 
                             <img
-                            src="/ajionew.jpeg"
+                            src="/ajionew.webp"
                             alt="Popup"
                             className=" block md:hidden h-auto max-h-[60vh] object-contain rounded-2xl "
+                            loading="lazy"
                         />
                           )
                       }

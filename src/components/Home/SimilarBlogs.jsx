@@ -32,6 +32,7 @@ const SimilarBlogs = ({ blogs }) => {
                   src={`${base_url}${property.image}`}
                   alt={property.title}
                   className="w-full h-full object-cover rounded-md"
+                  loading="lazy"
                 />
               </div>
             </div>

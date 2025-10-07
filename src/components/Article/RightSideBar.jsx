@@ -55,9 +55,10 @@ export const RightSideBar = ({ pathname,data }) => {
             target="_blank"
           >
             <img
-              src="/ajionew.jpeg"
+              src="/ajionew.webp"
               alt="Tata Neu Event"
               className="w-full h-[480px] object-conver rounded-md"
+              loading='lazy'
             />
           </Link>
           </>
@@ -67,9 +68,10 @@ export const RightSideBar = ({ pathname,data }) => {
             target="_blank"
           >
             <img
-              src="/ajionew.jpeg"
+              src="/ajionew.webp"
               alt="Tata Neu Event"
               className="w-full h-[480px] object-conver rounded-md"
+              loading='lazy'
             />
           </Link>
         )}

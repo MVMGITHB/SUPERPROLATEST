@@ -65,9 +65,10 @@ export const SideBar = ({ pathname, data }) => {
             target="_blank"
           >
             <img
-              src="/ajionew.jpeg"
+              src="/ajionew.webp"
               alt="Tata Neu Event"
               className="w-full h-[480px] object-conver rounded-md"
+              loading='lazy'
             />
           </Link></>
         ) : (
@@ -77,9 +78,10 @@ export const SideBar = ({ pathname, data }) => {
             target="_blank"
           >
             <img
-              src="/ajionew.jpeg"
+              src="/ajionew.webp"
               alt="Tata Neu Event"
               className="w-full h-[480px] object-conver rounded-md"
+              loading='lazy'
             />
           </Link>
           // <Link href="http://trk.yasd.in/click?campaign_id=166&pub_id=945" target="_blank">

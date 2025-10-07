@@ -38,9 +38,10 @@ export default function Popup() {
           className="relative"
         >
           <img
-            src="/pop5.png"
+            src="/pop5.webp"
             alt="Popup"
             className=" h-auto max-h-[60vh] object-contain rounded-2xl "
+            loading="lazy"
           />
 
          
