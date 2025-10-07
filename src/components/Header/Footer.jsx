@@ -90,14 +90,14 @@ export default function Footer() {
         <div>
           <h4 className="text-lg font-semibold mb-3">Follow Us</h4>
           <div className="flex space-x-4">
-            <a href="#" className="hover:text-gray-300">
+            <a href="https://www.facebook.com/supernproofficial/" className="hover:text-gray-300">
               <FaFacebook size={24} />
             </a>
             <a href="#" className="hover:text-gray-300">
               <FaTwitter size={24} />
             </a>
             <a
-              href="https://www.instagram.com/supernproinfo/?next=%2F"
+              href="https://www.instagram.com/supernproinfo/"
               className="hover:text-gray-300"
             >
               <FaInstagram size={24} />

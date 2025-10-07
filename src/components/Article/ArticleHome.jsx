@@ -1,5 +1,5 @@
 'use client'
-import React ,{useState}from "react";
+import React ,{useEffect, useState}from "react";
 import { SideBar } from "./SideBar";
 import { RightSideBar } from "./RightSideBar";
 import { base_url } from "../Helper/helper";
@@ -7,6 +7,7 @@ import { base_url } from "../Helper/helper";
 import { usePathname } from 'next/navigation';
 import Link from "next/link";
 import AnimatedLink from "./AnimatedLink";
+import axios from "axios";
 export const ArticleHome = ({ data }) => {
 
 const pathname = usePathname();
@@ -41,7 +42,106 @@ function splitAfterThirdParagraph(content) {
 // Usage
 const { firstPart, remainingPart } = splitAfterThirdParagraph(data.content);
 
+
+// formaet date
+
+const date = new Date(data?.createdAt);
+
+  const day = String(date.getDate()).padStart(2, "0");
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const year = String(date.getFullYear()).slice(-2);
+
+  const formattedDate = `${day}/${month}/${year}`;
+
+// schema add for seo
+
+
+const jsonLd = {
+    "@context": "https://schema.org/",
+    "@type": "Article",
+    headline: data?.title,
+    image: {
+      "@type": "ImageObject",
+      url: `${base_url}${data?.image}`,
+      width: 800,
+      height: 450,
+    },
+    author: {
+      "@type": "Person",
+      name: data?.author?.name,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: data?.author?.name,
+      logo: {
+        "@type": "ImageObject",
+        url: "publisherLogo",
+        width: "publisherLogoWidth",
+        height: "publisherLogoHeight",
+      },
+    },
+    datePublished: formattedDate,
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: data?.faqs?.map((faq) => ({
+      "@type": "Question",
+      name: faq.ques,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.ans,
+      },
+    })),
+  };
+  //  console.log("data for the faqSchema" ,data);
+
+  const authorSchema = {
+    "@context": "https://schema.org",
+
+    "@type": "Person",
+
+    name: `${data?.author?.name}`,
+
+    url: "https://example.com/about",
+
+    image: `${base_url}${data?.author?.image}`,
+
+    sameAs: ["https://twitter.com/johndoe", "https://linkedin.com/in/johndoe"],
+
+    jobTitle: "Content Writer",
+
+    worksFor: {
+      "@type": "Organization",
+
+      name: "SuperNPro Business Service",
+    },
+  };
+
+  // console.log("data for the authorSchema" ,authorSchema);
+
+
+ useEffect(() => {
+    axios
+      .get(`${base_url}/api/blog/getAllBlog`)
+      .then((res) => {
+        const data = res.data;
+        //console.log("conclusion---", data)
+      })
+      .catch((err) => console.error(err));
+  }, []);
+
   return (
+    <> 
+     <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
+        />
     <div className=" mx-auto p-4 flex flex-col md:flex-row gap-6">
 
       {/* asidbar comment */}
@@ -255,5 +355,10 @@ const { firstPart, remainingPart } = splitAfterThirdParagraph(data.content);
         <RightSideBar pathname={pathname} data={data}/>
       </div>
     </div>
+    <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+    </>
   );
 };
