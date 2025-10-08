@@ -6,6 +6,8 @@ import { Menu, X } from 'lucide-react';
 import { useAuth } from '@/components/context/auth';
 import SerachCategory from './SearchCategory';
 
+import Image from 'next/image';
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [auth, setAuth] = useAuth();
@@ -31,11 +33,13 @@ export default function Navbar() {
     <nav className="bg-[#f4f4f5] text-gray-600 shadow-lg w-full">
       <div className="max-w-[1440px] mx-auto px-4 py-2 flex justify-between items-center">
         <Link href="/" className="flex-shrink-0">
-          <img
-            src="/SuperNpro.webp"
-            alt="logo"
-            className="h-20 md:h-24 object-contain"
-          />
+         <Image
+  src="/SuperNpro.webp"
+  alt="logo"
+  width={96}       // corresponds to md:h-24 (adjust proportionally if needed)
+  height={96}
+  className="h-20 md:h-24 object-contain"
+/>
         </Link>
         <div className="hidden md:flex items-center md:gap-2 lg:gap-4  md:text-[14px] lg:text-[14px] font-semibold">
           {navItems.map(({ href, label }) => (

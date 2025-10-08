@@ -5,6 +5,8 @@ import React, { useState } from 'react';
 import { base_url } from '../Helper/helper';
 import { useRouter } from 'next/navigation';
 
+import Image from 'next/image';
+
 const Register = () => {
   const router = useRouter();
 
@@ -53,11 +55,11 @@ const Register = () => {
     <div className="min-h-screen flex items-center justify-center px-4 bg-gray-100">
       <div className="flex flex-col md:flex-row bg-white rounded-md shadow-md overflow-hidden max-w-4xl w-full">
         <div className="md:w-1/2">
-          <img
-            src="/register.webp"
-            alt="Registration"
-            className="w-full h-full object-cover md:object-contain p-4"
-          />
+         <img
+  src="/register.webp"
+  alt="Registration"
+  className="w-full h-full object-cover md:object-contain p-4"
+/>
         </div>
 
         <div className="md:w-1/2 p-6 md:p-8 bg-white">

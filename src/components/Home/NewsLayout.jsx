@@ -7,6 +7,10 @@ import Link from "next/link";
 import SimilarBlogs from "./SimilarBlogs";
 import { base_url } from "../Helper/helper";
 
+
+import Image from "next/image";
+
+
 export default function NewsLayout({ blog }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -38,9 +42,10 @@ export default function NewsLayout({ blog }) {
                 className="block"
               >
                 <div className="w-full h-96 relative cursor-pointer">
-                  <img
+                  <Image
                     src={`${base_url}${property.image}`}
                     alt={property.title}
+                    fill
                     className="w-full h-full object-cover rounded-lg"
                   />
                 </div>

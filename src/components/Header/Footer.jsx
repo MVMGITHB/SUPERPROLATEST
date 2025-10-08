@@ -1,17 +1,21 @@
 import Link from "next/link";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
         <div>
           <Link href="/" className="flex-shrink-0">
-            <img
-              src="/SupoernproLogo.webp"
-              alt="logo"
-              className="h-20 md:h-24 object-contain"
-            />
+          <Image
+  src="/SupoernproLogo.webp"
+  alt="logo"
+  width={96}       // h-24 corresponds to 96px
+  height={80}      // adjust proportionally if needed
+  className="h-20 md:h-24 object-contain"
+/>
           </Link>
           <a
             href="mailto:contact@supernpro.com"

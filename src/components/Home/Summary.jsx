@@ -3,6 +3,10 @@ import Link from "next/link";
 import { useState } from "react";
 import { base_url } from "../Helper/helper";
 
+
+import Image from "next/image";
+
+
 const Summary = ({ blog }) => {
   const [visibleCount, setVisibleCount] = useState(4);
   const sortedData = Array.isArray(blog)
@@ -22,10 +26,9 @@ const Summary = ({ blog }) => {
             target="_blank"
           >
             <img
-              src="./ajionew.webp"
+              src="/ajionew.webp"
               alt="Tata Neu Event"
               className="w-full h-[480px] object-conver rounded-md"
-              loading="lazy"
             />
           </Link>
         </div>
@@ -43,7 +46,9 @@ const Summary = ({ blog }) => {
               <img
                 src={`${base_url}${item?.image}`}
                 alt={item?.title}
+                // fill
                 className="rounded-xl w-full md:w-40 h-auto object-cover"
+                // priority
               />
               <div>
                 <Link

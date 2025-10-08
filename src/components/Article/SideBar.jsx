@@ -2,6 +2,8 @@ import Link from 'next/link';
 import AnimatedLink from './AnimatedLink';
 import AnimatedLink1 from './AnimatedLink1';
 
+import Image from 'next/image';
+
 export const SideBar = ({ pathname, data }) => {
 
   const data1 = [
@@ -64,12 +66,14 @@ export const SideBar = ({ pathname, data }) => {
             href="https://tracking.ajio.business/click?pid=87&offer_id=2&sub1=pass_your_subid%20&redirect=https://www.ajio.com/s/50to90percentoff-140961"
             target="_blank"
           >
-            <img
-              src="/ajionew.webp"
-              alt="Tata Neu Event"
-              className="w-full h-[480px] object-conver rounded-md"
-              loading='lazy'
-            />
+               <Image
+  src="/ajionew.webp"
+  alt="Tata Neu Event"
+  width={1920}      // replace with actual image width
+  height={480}      // replace with actual image height
+  className="w-full h-[480px] object-cover rounded-md"
+  priority
+/>
           </Link></>
         ) : (
 
@@ -77,12 +81,14 @@ export const SideBar = ({ pathname, data }) => {
             href="https://tracking.ajio.business/click?pid=87&offer_id=2&sub1=pass_your_subid%20&redirect=https://www.ajio.com/s/50to90percentoff-140961"
             target="_blank"
           >
-            <img
-              src="/ajionew.webp"
-              alt="Tata Neu Event"
-              className="w-full h-[480px] object-conver rounded-md"
-              loading='lazy'
-            />
+              <Image
+  src="/ajionew.webp"
+  alt="Tata Neu Event"
+  width={1920}      // replace with actual image width
+  height={480}      // replace with actual image height
+  className="w-full h-[480px] object-cover rounded-md"
+  priority
+/>
           </Link>
           // <Link href="http://trk.yasd.in/click?campaign_id=166&pub_id=945" target="_blank">
 

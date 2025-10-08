@@ -6,6 +6,9 @@ import Link from "next/link";
 import axios from "axios";
 import { base_url } from "../Helper/helper";
 
+
+import Image from "next/image";
+
 export const BlogHome = ({ url }) => {
 
    const [cards,setCards] = useState();
@@ -38,12 +41,15 @@ export const BlogHome = ({ url }) => {
             key={index}
             className="bg-[#f4f4f5] border border-gray-200 rounded-xl shadow-sm hover:shadow-lg transition-transform duration-300 hover:scale-[1.03]"
           >
-            <img
-              src={`${base_url}${card.image}`}
-              alt={card.title}
-              className="w-full h-48 object-cover rounded-t-xl"
-              loading="lazy"
-            />
+           <img
+  src={`${base_url}${card.image}`}
+  alt={card.title}
+         // height proportional to h-48 (48 * 4)
+        //  width={1920}
+        //  height={192}
+  className="w-full h-48 object-cover rounded-t-xl"
+
+/>
             <div className="p-2 text-center">
               <Link
                 href={`${card?.category?.slug}/${card?.slug}?utm_source=supernpro.com/&utm_medium=email&utm_campaign=${card?.slug}`}

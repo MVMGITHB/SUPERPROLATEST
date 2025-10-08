@@ -4,6 +4,11 @@ import { X } from "lucide-react";
 import Link from "next/link";
 import { base_url } from "../Helper/helper";
 
+
+import Image from "next/image";
+
+
+
 export default function Popup3({ data }) {
     const [visible, setVisible] = useState(false);
     const [showClose, setShowClose] = useState(false);
@@ -60,14 +65,13 @@ export default function Popup3({ data }) {
                             src={`${base_url}${data.images[0]}`}
                             alt="Popup"
                             className=" hidden md:block h-auto max-h-[60vh] object-contain rounded-2xl "
-                            loading="lazy"
                         /></>) : (<> 
                         
                         <img
                             src="/ajionew.jpeg"
                             alt="Popup"
+                            // fill
                             className="hidden md:block h-auto max-h-[60vh] object-contain rounded-2xl "
-                            loading="lazy"
                         />
                         
                         </>)
@@ -81,8 +85,8 @@ export default function Popup3({ data }) {
                             <img
                             src={`${base_url}${data.images[1]}`}
                             alt="Popup"
+                            // fill
                             className=" block md:hidden h-auto max-h-[60vh] object-contain rounded-2xl "
-                            loading="lazy"
                             />
                           )
                       }
@@ -93,8 +97,8 @@ export default function Popup3({ data }) {
                             <img
                             src={`${base_url}${data.images[0]}`}
                             alt="Popup"
-                            className=" block md:hidden h-auto max-h-[60vh] object-contain rounded-2xl "
-                            loading="lazy"
+                            // fill
+                            className=" block md:hidden h-auto max-h-[60vh] object-contain rounded-2xl"
                             />
                           )
                       }
@@ -102,12 +106,14 @@ export default function Popup3({ data }) {
                       {
                           !data.images[0] && !data.images[1] &&(
 
-                            <img
-                            src="/ajionew.webp"
-                            alt="Popup"
-                            className=" block md:hidden h-auto max-h-[60vh] object-contain rounded-2xl "
-                            loading="lazy"
-                        />
+                            <Image
+  src="/ajionew.webp"
+  alt="Popup"
+  width={1920}
+  height={1080}
+  className="block md:hidden h-auto max-h-[60vh] object-contain rounded-2xl"
+  priority
+/>
                           )
                       }
                     

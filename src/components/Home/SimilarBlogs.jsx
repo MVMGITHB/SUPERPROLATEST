@@ -1,6 +1,9 @@
 import Link from "next/link";
 import { base_url } from "../Helper/helper";
 
+import Image from "next/image";
+
+
 const SimilarBlogs = ({ blogs }) => {
   const getRandomBlogs = (array, count) => {
     const shuffled = [...array].sort(() => 0.5 - Math.random());
@@ -32,7 +35,6 @@ const SimilarBlogs = ({ blogs }) => {
                   src={`${base_url}${property.image}`}
                   alt={property.title}
                   className="w-full h-full object-cover rounded-md"
-                  loading="lazy"
                 />
               </div>
             </div>

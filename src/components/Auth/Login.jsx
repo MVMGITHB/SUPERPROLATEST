@@ -7,6 +7,8 @@ import { useRouter } from 'next/navigation';
 import { base_url } from '../Helper/helper';
 import { useAuth } from '@/components/context/auth';
 
+
+
 const Login = () => {
   const router = useRouter();
   const [auth, setAuth] = useAuth();
@@ -60,10 +62,10 @@ const Login = () => {
         
         <div className="md:w-1/2">
           <img
-            src="/login.webp"
-            alt="Login"
-            className="w-full h-full object-cover md:object-contain p-4"
-          />
+  src="/login.webp"
+  alt="Login"
+  className="w-full h-full object-cover md:object-contain p-4"
+/>
         </div>
 
         <div className="md:w-1/2 p-6 md:p-8 bg-white">

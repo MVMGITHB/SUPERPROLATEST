@@ -8,6 +8,9 @@ import { usePathname } from 'next/navigation';
 import Link from "next/link";
 import AnimatedLink from "./AnimatedLink";
 import axios from "axios";
+
+import Image from "next/image";
+
 export const ArticleHome = ({ data }) => {
 
 const pathname = usePathname();
@@ -153,11 +156,18 @@ const jsonLd = {
         <h1 className="text-2xl text-gray-600  font-bold text-center mb-4">
           {data.title}
         </h1>
-        <img
-          src={`${base_url}${data.image}`}
-          alt="8th Pay Commission"
-          className="w-full md:w-[800] h-auto md:h-[400] rounded-md mb-4"
-        />
+       <div className="w-full md:w-[800px] h-auto md:h-[400px] relative rounded-md mb-4 overflow-hidden">
+ 
+  {/* note : change to img tag to image tag give url in next.config website base url */}
+  <Image
+    src={`${base_url}${data.image}`}
+    alt="8th Pay Commission"
+    fill
+    className="object-cover rounded-md"
+    priority
+  />
+</div>
+
          
 
          {/* {

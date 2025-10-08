@@ -40,8 +40,8 @@ export default function Popup() {
           <img
             src="/pop5.webp"
             alt="Popup"
+            // fill
             className=" h-auto max-h-[60vh] object-contain rounded-2xl "
-            loading="lazy"
           />
 
          

@@ -2,6 +2,9 @@
  
 import { useEffect, useState } from "react";
 import { base_url } from "../Helper/helper";
+
+
+import Image from "next/image";
  
 export default function AuthorPage({ slug }) {
   const [author, setAuthor] = useState(null);
@@ -42,10 +45,12 @@ export default function AuthorPage({ slug }) {
       <section className="max-w-6xl mx-auto px-4 py-12">
         <div className="bg-white shadow-xl rounded-3xl p-6 border border-gray-200">
           <div className="flex flex-col md:flex-row gap-6 items-center md:items-start">
-            <img
-  src={`${base_url}${author?.image}` || "/images/default-user.png"}
-  alt={author.name}
-  className="w-32 h-32 rounded-full border-4 border-blue-500 shadow-md object-cover"
+           <Image
+  src={author?.image ? `${base_url}${author.image}` : "/images/default-user.png"}
+  alt={author?.name || "Author"}
+  width={128}       // size for desktop
+  height={128}      // size for desktop
+  className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-full border-4 border-blue-500 shadow-md object-cover"
 />
 
  
@@ -87,18 +92,21 @@ export default function AuthorPage({ slug }) {
                   className="bg-white rounded-2xl p-6 shadow-md border"
                 >
                   <div className="flex flex-col lg:flex-row gap-4">
-                    <img
-                      src={
-                        typeof post.image === "string"
-                          ? post.image.includes("res")
-                            ? post.image
-                            : `${base_url}${post.image}`
-                          : post.image?.url
-                      }
-                      alt={post.title}
-                      className="w-full lg:w-48 h-32 object-cover rounded-xl"
-                      loading="lazy"
-                    />
+                  <Image
+  src={
+    typeof post.image === "string"
+      ? post.image.includes("res")
+        ? post.image
+        : `${base_url}${post.image}`
+      : post.image?.url
+  }
+  alt={post.title}
+  width={193}       // replace with actual image width
+  height={128}       // replace with actual image height
+  className="w-full lg:w-48 h-32 object-cover rounded-xl"
+  priority
+/>
+
                     <div className="flex-1">
                       <h3 className="text-xl font-bold text-gray-900">
                         {post.title}

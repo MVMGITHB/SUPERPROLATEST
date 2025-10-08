@@ -5,6 +5,9 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { base_url } from "../Helper/helper";
 
+
+import Image from "next/image";
+
 const Authors = () => {
   const [authors, setAuthors] = useState([]);
 
@@ -32,11 +35,14 @@ const Authors = () => {
         key={author._id}
         className="bg-amber-50 rounded-2xl shadow-lg p-6 flex flex-col items-center transition-transform hover:-translate-y-1 hover:shadow-xl"
       >
-        <img
-src={`${base_url}${author?.image}`}
-          alt={author?.name}
-          className="w-28 h-28 rounded-full object-cover border-4 border-[#211C84] shadow-sm"
-        />
+       <Image
+  src={author?.image ? `${base_url}${author.image}` : "/images/default-user.png"}
+  alt={author?.name || "Author"}
+  width={112}       // 28 * 4 for px equivalent
+  height={112}
+  className="w-28 h-28 rounded-full object-cover border-4 border-[#211C84] shadow-sm"
+/>
+
         <h2 className="text-xl font-semibold mt-4 text-gray-900 capitalize">
           {author.name}
         </h2>
