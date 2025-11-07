@@ -97,9 +97,10 @@ export default function Footer() {
             <a href="https://www.facebook.com/supernproofficial/" className="hover:text-gray-300">
               <FaFacebook size={24} />
             </a>
-            <a href="#" className="hover:text-gray-300">
+            <a href="https://x.com/supernpro" className="hover:text-gray-300">
               <FaTwitter size={24} />
             </a>
+
             <a
               href="https://www.instagram.com/supernproinfo/"
               className="hover:text-gray-300"
