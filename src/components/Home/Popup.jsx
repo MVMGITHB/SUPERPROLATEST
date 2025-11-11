@@ -19,7 +19,7 @@ export default function Popup() {
   if (!visible) return null;
 
   return (
-<></>
+    <></>
 
     // <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm p-2">
     //   <div className="relative min-w-[65%] flex justify-center  rounded-2xl overflow-hidden">
@@ -32,7 +32,7 @@ export default function Popup() {
     //         <X size={20} className="text-black" />
     //       </button>
     //     )}
-        
+
     //     <Link
     //       href="https://trk.clickgenie.in/click?campaign_id=34900&pub_id=5742&p1=%7Byour-transaction-id%7D&source=%7Byour-sub-aff-id%7D"
     //       target="_blank"
@@ -50,7 +50,6 @@ export default function Popup() {
     //         className="block md:hidden h-auto max-h-[60vh] object-contain rounded-2xl "
     //       />
 
-         
     //     </Link>
     //   </div>
     // </div>

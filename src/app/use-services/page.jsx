@@ -3,7 +3,7 @@
 export const metadata = {
   title: " Terms of Use | Supernpro – User Agreement & Website Policies",
   description:
-    " Read Supernpro’s Terms of Use to understand our website policies, user responsibilities, and service conditions. Your access signifies acceptance of these terms.",
+    "Learn about the terms, conditions, and policies governing your access and use of Supernpro.com, in accordance with Indian regulations.",
   metadataBase: new URL("https://supernpro.com"),
   alternates: {
     canonical: "./",
@@ -14,15 +14,15 @@ export const metadata = {
   // },
 };
 
-import UseServices from "@/components/useService/UseServices"
+import UseServices from "@/components/useService/UseServices";
 
 const page = () => {
   return (
     <div>
-    <UseServices/> 
-    {/* update use */}
+      <UseServices />
+      {/* update use */}
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

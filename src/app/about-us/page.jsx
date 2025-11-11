@@ -1,8 +1,8 @@
 export const metadata = {
   title:
-    "About Us | Supernpro – Trusted Daily News, Stock Market & Financial Insights",
+    "Supernpro | About Us – Bringing You the Latest in Politics, Finance, & More",
   description:
-    "Discover Supernpro, your reliable platform for daily news, stock market trends, PF updates, and tax tips. Stay informed with expert-driven, verified, and easy-to-understand insights every day.",
+    "About Supernpro – a reliable platform bringing daily updates and expert insights on politics, finance, technology, and lifestyle.",
   metadataBase: new URL("https://supernpro.com"),
   alternates: {
     canonical: "./",

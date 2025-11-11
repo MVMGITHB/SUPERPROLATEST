@@ -1,27 +1,52 @@
-
 export const metadata = {
-  title: "SuperNPro Finance | Latest Finance News, Economy & Market Updates ",
-  description: "Explore financial news, stock market updates, economic analysis, and expert tips on personal finance and investing.",
+  title: "Supernpro Finance – Latest Market News, Banking & Investment Updates",
+  description:
+    "Explore financial news, stock market updates, economic analysis, and expert tips on personal finance and investing.",
   metadataBase: new URL("https://supernpro.com"),
   alternates: {
     canonical: "./",
   },
   // robots: {
-  //   index: false, 
-  //   follow: false, 
+  //   index: false,
+  //   follow: false,
   // },
 };
 
-import { Blog } from "@/components/blog/Blog"
+import { Blog } from "@/components/blog/Blog";
 const page = () => {
-
-
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://supernpro.com/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "advertiser",
+        item: "https://supernpro.com/finance",
+      },
+    ],
+  };
 
   return (
     <div>
-        <Blog url="finance"/>
-    </div>
-  )
-}
+      {/* // add breadcrumbSchema  */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
 
-export default page
+      <h1 className="text-4xl text-gray-700  flex justify-center items-center font-sans font-extrabold ">
+        Finance: Banking, Investments, and Business Trends
+      </h1>
+      <Blog url="finance" />
+    </div>
+  );
+};
+
+export default page;

@@ -15,8 +15,34 @@ export const metadata = {
 
 import { Blog } from "@/components/blog/Blog";
 const page = () => {
+
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://supernpro.com/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "advertiser",
+        item: "https://supernpro.com/sports",
+      },
+    ],
+  };
+
+
+
   return (
     <div>
+
+      <h1 className="text-4xl text-gray-700  flex justify-center items-center font-sans font-extrabold ">Latest Sports News, Scores, and Highlights</h1>
+
       <Blog url="sports" />
     </div>
   );

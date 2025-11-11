@@ -1,5 +1,5 @@
 export const metadata = {
-  title: " SuperNPro Fashion & Lifestyle | Fashion News & Lifestyle Tips",
+  title: "Supernpro | Breaking Entertainment Stories, Gossip & Film Reviews",
   description:
     "Explore fashion trends, beauty tips, wellness guides, and lifestyle inspiration curated for modern living.",
   metadataBase: new URL("https://supernpro.com"),
@@ -16,6 +16,11 @@ import { Blog } from "@/components/blog/Blog";
 const page = () => {
   return (
     <div>
+
+      <h1 className="text-4xl text-gray-700  flex justify-center items-center font-sans font-extrabold ">Latest Fashion & Lifestyle Trends, Tips & Stories</h1>
+
+
+
       <Blog url="fashion-lifestyle" />
     </div>
   );

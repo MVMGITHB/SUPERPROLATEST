@@ -9,13 +9,13 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
         <div>
           <Link href="/" className="flex-shrink-0">
-          <Image
-  src="/SupoernproLogo.webp"
-  alt="logo"
-  width={96}       // h-24 corresponds to 96px
-  height={80}      // adjust proportionally if needed
-  className="h-20 md:h-24 object-contain"
-/>
+            <Image
+              src="/SupoernproLogo.webp"
+              alt="logo"
+              width={96} 
+              height={80}
+              className="h-20 md:h-24 object-contain"
+            />
           </Link>
           <a
             href="mailto:contact@supernpro.com"
@@ -51,7 +51,7 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/useservices" className="hover:text-white">
+              <Link href="/use-services" className="hover:text-white">
                 Use & Services
               </Link>
             </li>
@@ -94,7 +94,10 @@ export default function Footer() {
         <div>
           <h4 className="text-lg font-semibold mb-3">Follow Us</h4>
           <div className="flex space-x-4">
-            <a href="https://www.facebook.com/supernproofficial/" className="hover:text-gray-300">
+            <a
+              href="https://www.facebook.com/supernproofficial/"
+              className="hover:text-gray-300"
+            >
               <FaFacebook size={24} />
             </a>
             <a href="https://x.com/supernpro" className="hover:text-gray-300">

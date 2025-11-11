@@ -7,9 +7,7 @@ import Link from "next/link";
 import SimilarBlogs from "./SimilarBlogs";
 import { base_url } from "../Helper/helper";
 
-
 import Image from "next/image";
-
 
 export default function NewsLayout({ blog }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -24,7 +22,9 @@ export default function NewsLayout({ blog }) {
 
       {/* Main Section */}
       <main className="w-full md:w-3/5 p-2 rounded-lg">
-        <h2 className="text-lg font-bold mb-4 text-gray-800">Trending Topics</h2>
+        <h1 className="text-lg font-bold mb-4 text-gray-800">
+          Trending Topics
+        </h1>
 
         {blogs.length > 0 && (
           <Carousel
@@ -72,11 +72,15 @@ export default function NewsLayout({ blog }) {
             href="https://tracking.ajio.business/click?pid=87&offer_id=2&sub1=pass_your_subid%20&redirect=https://www.ajio.com/s/50to90percentoff-140961"
             target="_blank"
           >
-            <img
-              src="./ajionew.webp"
-              alt="Ajio event"
-              className="w-full h-[480px] object-conver rounded-md"
-              loading="lazy"
+
+            {/* //change to img to image  */}
+            <Image
+              src="/ajionew.webp"
+              alt="Tata Neu Event"
+              width={1920} // replace with actual image width
+              height={480} // replace with actual image height
+              className="w-full h-[480px] object-cover rounded-md"
+              priority
             />
           </Link>
         </div>

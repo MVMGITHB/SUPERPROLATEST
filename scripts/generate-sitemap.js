@@ -23,7 +23,7 @@ async function generateSitemap() {
       { loc: `${BASE_URL}/sports`, priority: "0.80" },
       { loc: `${BASE_URL}/about-us`, priority: "0.80" },
       { loc: `${BASE_URL}/privacypolicy`, priority: "0.80" },
-      { loc: `${BASE_URL}/useservices`, priority: "0.80" },
+      { loc: `${BASE_URL}/use-services`, priority: "0.80" },
     ];
 
     const staticXml = staticUrls.map(

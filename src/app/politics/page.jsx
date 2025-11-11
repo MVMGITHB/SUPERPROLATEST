@@ -1,7 +1,7 @@
 // Metadata for SEO and social sharing
 export const metadata = {
   title:
-    " SuperNPro Politics | Latest Political News, Opinions & Global Affairs",
+    "Supernpro Politics – Latest Political News, Analysis & Updates",
   description:
     "Stay updated with SuperNPro’s in-depth coverage of political developments, elections, policies, and global diplomacy.",
   metadataBase: new URL("https://supernpro.com"),
@@ -16,8 +16,38 @@ export const metadata = {
 
 import { Blog } from "@/components/blog/Blog";
 const page = () => {
+
+  // added breadcum schema
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "home",
+        item: "https://supernpro.com/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "politics",
+        item: "https://supernpro.com/politics",
+      },
+    ],
+  };
+
   return (
     <div>
+
+
+       {/* // add breadcrumbSchema  */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+
+ <h1 className="text-4xl text-gray-700  flex justify-center items-center font-sans font-extrabold ">Politics: Breaking News, Insights, and Analysis</h1>
       <Blog url="politics" />
     </div>
   );

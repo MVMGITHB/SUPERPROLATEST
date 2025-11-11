@@ -1,13 +1,26 @@
 "use client";
 
-import React, { useState } from 'react';
-import axios from 'axios';
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
-import { base_url } from '../Helper/helper';
-import { useAuth } from '@/components/context/auth';
+import React, { useState } from "react";
+import axios from "axios";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { base_url } from "../Helper/helper";
+import { useAuth } from "@/components/context/auth";
+import Image from "next/image";
 
-
+export const metadata = {
+  title: "Login | SuperNPro Entertainment",
+  description:
+    "Access your SuperNPro account to enjoy exclusive celebrity news, entertainment updates, movies, pop culture and more.",
+  metadataBase: new URL("https://supernpro.com"),
+  alternates: {
+    canonical: "/login",
+  },
+  // robots: {
+  //   index: false,
+  //   follow: false,
+  // },
+};
 
 const Login = () => {
   const router = useRouter();
@@ -46,8 +59,7 @@ const Login = () => {
 
         localStorage.setItem("auth", JSON.stringify(response.data));
         setFormData({ email: "", password: "" });
-                router.push("/");
-
+        router.push("/");
       }
     } catch (error) {
       setError(true);
@@ -59,17 +71,21 @@ const Login = () => {
   return (
     <div className="min-h-screen flex items-center justify-center px-4">
       <div className="flex flex-col md:flex-row bg-white rounded-md shadow-md overflow-hidden max-w-4xl w-full">
-        
         <div className="md:w-1/2">
-          <img
-  src="/login.webp"
-  alt="Login"
-  className="w-full h-full object-cover md:object-contain p-4"
-/>
+          <Image
+            src="/login.webp"
+            alt="Login"
+            width={1200}
+            height={675}
+            className="w-full h-full object-cover md:object-contain p-4"
+            priority
+          />
         </div>
 
         <div className="md:w-1/2 p-6 md:p-8 bg-white">
-          <h2 className="text-2xl font-semibold mb-5 text-gray-700">Welcome Back!</h2>
+          <h2 className="text-2xl font-semibold mb-5 text-gray-700">
+            Welcome Back!
+          </h2>
 
           {err && (
             <div className="text-red-600 bg-red-100 p-2 rounded mb-4 text-sm">
@@ -91,7 +107,9 @@ const Login = () => {
               />
             </div>
             <div>
-              <label className="block mb-1 text-sm text-gray-600">Password</label>
+              <label className="block mb-1 text-sm text-gray-600">
+                Password
+              </label>
               <input
                 type="password"
                 name="password"
@@ -107,7 +125,9 @@ const Login = () => {
               type="submit"
               disabled={loading}
               className={`w-full py-2 rounded-md text-white transition-colors ${
-                loading ? "bg-blue-300 cursor-not-allowed" : "bg-blue-500 hover:bg-blue-600"
+                loading
+                  ? "bg-blue-300 cursor-not-allowed"
+                  : "bg-blue-500 hover:bg-blue-600"
               }`}
             >
               {loading ? "Logging in..." : "Login"}

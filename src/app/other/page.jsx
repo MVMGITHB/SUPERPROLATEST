@@ -8,21 +8,18 @@
 //     canonical: "./",
 //   },
 //   // robots: {
-//   //   index: false, 
-//   //   follow: false, 
+//   //   index: false,
+//   //   follow: false,
 //   // },
 // };
 
-import { Blog } from "@/components/blog/Blog"
+import { Blog } from "@/components/blog/Blog";
 const page = () => {
-
-
-
   return (
     <div>
-        <Blog url="other"/>
+      <Blog url="other" />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

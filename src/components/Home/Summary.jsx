@@ -2,10 +2,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { base_url } from "../Helper/helper";
-
-
 import Image from "next/image";
-
 
 const Summary = ({ blog }) => {
   const [visibleCount, setVisibleCount] = useState(4);
@@ -21,18 +18,22 @@ const Summary = ({ blog }) => {
     <div className="mx-auto flex flex-col md:flex-row gap-6">
       <aside className="w-full md:w-1/5">
         <div className="sticky top-4 bg-gray-100 p-4 rounded-lg shadow-md ">
-           <Link
+          <Link
             href="https://tracking.ajio.business/click?pid=87&offer_id=2&sub1=pass_your_subid%20&redirect=https://www.ajio.com/s/50to90percentoff-140961"
             target="_blank"
           >
-            <img
+
+            {/* //chnage img to image tag  */}
+            <Image
               src="/ajionew.webp"
               alt="Tata Neu Event"
-              className="w-full h-[480px] object-conver rounded-md"
+              width={1920} // replace with actual image width
+              height={480} // replace with actual image height
+              className="w-full h-[480px] object-cover rounded-md"
+              priority
             />
           </Link>
         </div>
-        
       </aside>
 
       <main className="w-full md:w-3/5 flex flex-col gap-4 p-2 mt-[-25px]">

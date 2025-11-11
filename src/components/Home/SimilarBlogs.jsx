@@ -1,9 +1,6 @@
 import Link from "next/link";
 import { base_url } from "../Helper/helper";
 
-import Image from "next/image";
-
-
 const SimilarBlogs = ({ blogs }) => {
   const getRandomBlogs = (array, count) => {
     const shuffled = [...array].sort(() => 0.5 - Math.random());
@@ -46,4 +43,3 @@ const SimilarBlogs = ({ blogs }) => {
 };
 
 export default SimilarBlogs;
-  
