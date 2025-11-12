@@ -42,7 +42,7 @@ const page = () => {
       />
 
 
-<h1 className="text-4xl text-gray-700  flex justify-center items-center font-sans font-extrabold ">Latest Sports News, Scores, and Highlights</h1>
+<h1 className="text-4xl text-gray-700  flex justify-center items-center font-sans font-extrabold ">Latest Automobile News, Launches & Reviews</h1>
       <Blog url="automobile" />
     </div>
   );

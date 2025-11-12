@@ -1,13 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["connect.couponsculture.com"], // ✅ your existing config
+    domains: ["connect.couponsculture.com"],
   },
 
   async headers() {
     return [
       {
-        source: "/(.*)", // ✅ apply to all routes
+        source: "/(.*)",
         headers: [
           { key: "X-Content-Type-Options", value: "nosniff" },
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
@@ -17,9 +17,19 @@ const nextConfig = {
       },
     ];
   },
+
+  async rewrites() {
+    return [
+      {
+        source: "/api/:path*",
+        destination: "https://connect.couponsculture.com/api/:path*",
+      },
+    ];
+  },
 };
 
 export default nextConfig;
+
 
 // remove this code for security
 
