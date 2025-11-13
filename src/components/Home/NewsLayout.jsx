@@ -79,7 +79,7 @@ export default function NewsLayout({ blog }) {
               alt="Tata Neu Event"
               width={1920} // replace with actual image width
               height={480} // replace with actual image height
-              className="w-full h-[480px] object-cover rounded-md"
+              className="w-full h-[480px] object-cover rounded-md lg:rounded-none"
               priority
             />
           </Link>

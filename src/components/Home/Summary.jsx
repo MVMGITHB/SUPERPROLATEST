@@ -17,7 +17,7 @@ const Summary = ({ blog }) => {
   return (
     <div className="mx-auto flex flex-col md:flex-row gap-6">
       <aside className="w-full md:w-1/5">
-        <div className="sticky top-4 bg-gray-100 p-4 rounded-lg shadow-md ">
+        <div className="sticky top-4 bg-gray-100 p-4 lg:p-0 rounded-lg lg:rounded-none shadow-md ">
           <Link
             href="https://tracking.ajio.business/click?pid=87&offer_id=2&sub1=pass_your_subid%20&redirect=https://www.ajio.com/s/50to90percentoff-140961"
             target="_blank"
@@ -29,7 +29,7 @@ const Summary = ({ blog }) => {
               alt="Tata Neu Event"
               width={1920} // replace with actual image width
               height={480} // replace with actual image height
-              className="w-full h-[480px] object-cover rounded-md"
+              className="w-full h-[480px] object-cover rounded-md lg:rounded-none"
               priority
             />
           </Link>
