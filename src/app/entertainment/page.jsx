@@ -41,8 +41,13 @@ const page = () => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
-
-      <h1 className="text-4xl text-gray-700  flex justify-center items-center font-sans font-extrabold ">Entertainment: Bollywood, Hollywood & OTT Buzz</h1>
+      <h1 className="text-4xl text-gray-700 mt-2  flex justify-center items-center font-sans font-extrabold ">
+        Entertainment: Bollywood, Hollywood & OTT Buzz
+      </h1>
+      <h2 className="text-gray-600 text-xl mt-2 flex justify-center items-center font-sans">
+        From red carpets to reel life — get all the gossip, reviews, and
+        behind-the-scenes moments from the world of entertainment.
+      </h2>
       <Blog url="entertainment" />
     </div>
   );

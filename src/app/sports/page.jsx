@@ -15,8 +15,6 @@ export const metadata = {
 
 import { Blog } from "@/components/blog/Blog";
 const page = () => {
-
-
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -36,12 +34,15 @@ const page = () => {
     ],
   };
 
-
-
   return (
     <div>
-
-      <h1 className="text-4xl text-gray-700  flex justify-center items-center font-sans font-extrabold ">Latest Sports News, Scores, and Highlights</h1>
+      <h1 className="text-4xl text-gray-700 mt-2  flex justify-center items-center font-sans font-extrabold ">
+        Latest Sports News, Scores, and Highlights
+      </h1>
+      <h2 className="text-gray-600 text-xl mt-2 flex justify-center items-center font-sans">
+        From cricket to football — get the latest updates, exclusive insights,
+        and top sporting moments.
+      </h2>
 
       <Blog url="sports" />
     </div>

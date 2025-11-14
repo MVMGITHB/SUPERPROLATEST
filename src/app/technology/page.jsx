@@ -41,9 +41,14 @@ const page = () => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
+      <h1 className="text-4xl text-gray-700 mt-2  flex justify-center items-center font-sans font-extrabold ">
+        Latest Technology News, Trends & Innovations
+      </h1>
 
-      <h1 className="text-4xl text-gray-700  flex justify-center items-center font-sans font-extrabold ">Latest Technology News, Trends & Innovations</h1>
-
+      <h2 className="text-gray-600 text-xl mt-2 flex justify-center items-center font-sans">
+        Stay ahead with insights on emerging technologies, industry trends, and
+        future innovations
+      </h2>
       <Blog url="technology" />
     </div>
   );

@@ -16,8 +16,6 @@ export const metadata = {
 
 import { Blog } from "@/components/blog/Blog";
 const page = () => {
-
-
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -37,20 +35,21 @@ const page = () => {
     ],
   };
 
-
-
   return (
     <div>
-
-
-       {/* // add breadcrumbSchema  */}
+      {/* // add breadcrumbSchema  */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
-
-      <h1 className="text-4xl text-gray-700  flex justify-center items-center font-sans font-extrabold ">Latest Real Estate News, Trends & Market Insights</h1>
+      <h1 className="text-4xl text-gray-700 mt-2  flex justify-center items-center font-sans font-extrabold ">
+        Latest Real Estate News, Trends & Market Insights
+      </h1>
+      <h2 className="text-gray-600 text-xl mt-2 flex justify-center items-center font-sans">
+        Discover property updates, buying guides, and market movements shaping
+        the real estate sector.
+      </h2>
       <Blog url="real-estate" />
     </div>
   );
