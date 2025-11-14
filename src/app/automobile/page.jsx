@@ -38,11 +38,11 @@ const page = () => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
-      <h1 className="text-4xl text-gray-700 mt-2  flex justify-center items-center font-sans font-extrabold ">
+      <h1 className="text-4xl text-gray-700 mt-2 p-3 lg:p-0  flex justify-center items-center font-sans font-extrabold ">
         Latest Automobile News, Launches & Reviews
       </h1>
 
-      <h2 className="text-gray-600 text-xl mt-2 flex justify-center items-center font-sans">
+      <h2 className="text-gray-600 text-xl mt-2 p-3 lg:p-0 flex justify-center items-center font-sans">
         From electric vehicles to luxury rides — explore what’s new and next in
         the world of automobiles.
       </h2>

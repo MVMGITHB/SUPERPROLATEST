@@ -10,6 +10,8 @@ export const RightSide = () => {
         <Link
           href="http://trk.yasd.in/click?campaign_id=166&pub_id=945"
           target="_blank"
+          rel="noopner noreferrer"
+          title="Go to advertisment page"
         >
           <Image
             src="https://mvmbs.com/images/bjj2.webp"
@@ -33,6 +35,8 @@ export const RightSide = () => {
         <Link
           href="http://trk.yasd.in/click?campaign_id=166&pub_id=945"
           target="_blank"
+          rel="noopener noreferrer"
+          title="Go to top news image"
         >
           <Image
             src="https://mvmbs.com/images/bjj1.webp"

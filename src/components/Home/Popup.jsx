@@ -36,6 +36,8 @@ export default function Popup() {
     //     <Link
     //       href="https://trk.clickgenie.in/click?campaign_id=34900&pub_id=5742&p1=%7Byour-transaction-id%7D&source=%7Byour-sub-aff-id%7D"
     //       target="_blank"
+    //       rel="noopener noreferre"
+    //       title = "Go to popup page for offer"
     //       className="relative"
     //     >
     //       <img

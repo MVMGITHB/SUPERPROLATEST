@@ -32,7 +32,12 @@ export default function Navbar() {
   return (
     <nav className="bg-[#f4f4f5] text-gray-600 shadow-lg w-full">
       <div className="max-w-[1440px] mx-auto px-4 py-2 flex justify-between items-center">
-        <Link href="/" className="flex-shrink-0">
+        <Link 
+         href="/" 
+         className="flex-shrink-0"
+         rel="noopener noreferrer"
+         title="Go to superNpro logo"
+         >
           <Image
             src="/SuperNpro.webp"
             alt="logo"
@@ -43,7 +48,12 @@ export default function Navbar() {
         </Link>
         <div className="hidden md:flex items-center md:gap-2 lg:gap-4  md:text-[14px] lg:text-[14px] font-semibold">
           {navItems.map(({ href, label }) => (
-            <Link key={href} href={href} className="relative group w-fit">
+            <Link 
+            key={href} href={href} 
+            className="relative group w-fit"
+            rel="noopener noreferrer"
+            title="Go to search Category"
+            >
               {label}
               <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#4F1C51] transition-all duration-300 group-hover:w-full"></span>
             </Link>
@@ -64,12 +74,16 @@ export default function Navbar() {
               <Link
                 href="/login"
                 className="bg-gray-300 text-black px-4 py-2 rounded-lg hover:bg-gray-200"
+                rel="noopener noreferrer"
+                title="Go to sign-in page"
               >
                 Sign In
               </Link>
               <Link
                 href="/register"
                 className="bg-yellow-400 text-black px-4 py-2 rounded-lg hover:bg-yellow-500"
+                rel="noopener noreferrer"
+                title="Go to sign-up page"
               >
                 Sign Up
               </Link>
@@ -91,6 +105,8 @@ export default function Navbar() {
               key={href}
               href={href}
               className="block bg-blue-100 text-black py-2 px-3 rounded-lg hover:bg-blue-200"
+              rel="noopener noreferrer"
+              title="Go to logout page"
             >
               {label}
             </Link>
@@ -111,12 +127,16 @@ export default function Navbar() {
               <Link
                 href="/login"
                 className="block bg-yellow-400 text-white px-4 py-2 rounded-lg hover:bg-yellow-500"
+               rel= "noopener noreferrer"
+               title="Go to sign page"
               >
                 Sign In
               </Link>
               <Link
                 href="/register"
                 className="block bg-yellow-400 text-white px-4 py-2 rounded-lg hover:bg-yellow-500"
+                rel="noopener noreferrer"
+                title="Go to signUp page"
               >
                 Sign Up
               </Link>

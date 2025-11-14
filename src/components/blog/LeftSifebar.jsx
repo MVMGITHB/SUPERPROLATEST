@@ -9,6 +9,8 @@ export const LeftSidebar = () => {
       <div className="w-full bg-white rounded-xl shadow-lg overflow-hidden">
         <Link
           href="https://spectrum.gotrackier.com/click?campaign_id=1201&pub_id=945&source=%7B1%7D"
+          rel="noopener noreferrer"
+          title="Go to tataNew offer page"
           target="_blank"
         >
           <Image
@@ -25,6 +27,8 @@ export const LeftSidebar = () => {
       <div className="w-full bg-white rounded-xl shadow-lg overflow-hidden">
         <Link
           href="https://spectrum.gotrackier.com/click?campaign_id=1201&pub_id=945&source=%7B1%7D"
+          rel="noopener noreferrer"
+          title="Go to tataNew offer page"
           target="_blank"
         >
           <Image

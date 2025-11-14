@@ -19,6 +19,8 @@ const SimilarBlogs = ({ blogs }) => {
           <Link
             key={property?.id}
             href={`/${property?.category?.slug}/${property?.slug}`}
+            rel="noopener noreferrer"
+            title="Go to title page"
             className="block"
           >
             <div className="bg-[#eeeef5] rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 p-2 flex items-center justify-between gap-4">

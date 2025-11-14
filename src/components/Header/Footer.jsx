@@ -8,7 +8,10 @@ export default function Footer() {
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
         <div>
-          <Link href="/" className="flex-shrink-0">
+          <Link href="/" className="flex-shrink-0"
+          rel="noopener noreferrer"
+          title="Go to superNpro logo"
+          >
             <Image
               src="/SupoernproLogo.webp"
               alt="logo"
@@ -29,29 +32,43 @@ export default function Footer() {
           <h4 className="text-lg font-semibold mb-3">Quick Links</h4>
           <ul className="space-y-2 text-sm text-gray-300">
             <li>
-              <Link href="/" className="hover:text-white">
+              <Link href="/" className="hover:text-white"
+              rel="noopener noreferrer"
+              title="Go to home page"
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-white">
+              <Link href="#" className="hover:text-white"
+              rel="noopner noreferrer"
+              title="Go to news page">
                 News
               </Link>
             </li>
             {/* <li><Link href="#" className="hover:text-white">India Global</Link></li> */}
             {/* <li><Link href="#" className="hover:text-white">Politics</Link></li> */}
             <li>
-              <Link href="/about-us" className="hover:text-white">
+              <Link href="/about-us" className="hover:text-white"
+              rel="noopener noreferrer"
+              title="Go to about-us page"
+              >
                 About Us
               </Link>
             </li>
             <li>
-              <Link href="/privacypolicy" className="hover:text-white">
+              <Link href="/privacypolicy" className="hover:text-white"
+              rel="noopener noreferrer"
+              title="go to Privacy and policy page"
+              >
                 Privacy & Policy
               </Link>
             </li>
             <li>
-              <Link href="/use-services" className="hover:text-white">
+              <Link href="/use-services" className="hover:text-white"
+              rel="noopener noreferrer"
+              title="Go to use & services page"
+              >
                 Use & Services
               </Link>
             </li>
@@ -64,27 +81,44 @@ export default function Footer() {
           </h4>
           <ul className="space-y-2 text-sm text-gray-300">
             <li>
-              <Link href="/finance" className="hover:text-white">
+              <Link href="/finance" className="hover:text-white"
+              rel="noopener noreferrer"
+              title="Go to Finance page"
+              >
                 Finance
               </Link>
             </li>
             <li>
-              <Link href="/automobile" className="hover:text-white">
+              <Link href="/automobile" className="hover:text-white"
+              rel="noopner noreferrer"
+              title="Go to automobile page"
+              >
                 Automobile
               </Link>
             </li>
             <li>
-              <Link href="real-estate" className="hover:text-white">
+              <Link href="real-estate" className="hover:text-white"
+              rel="noopener noreferrer"
+              title="Go to real e-state page"
+              >
                 Real Estate
               </Link>
             </li>
             <li>
-              <Link href="fashion-lifestyle" className="hover:text-white">
+              <Link 
+              href="fashion-lifestyle" 
+              className="hover:text-white"
+              rel="noopener noreferrer"
+              title="Go to Fashian and lifestyle page"
+              >
                 Fashion & Lifestyle
               </Link>
             </li>
             <li>
-              <Link href="sports" className="hover:text-white">
+              <Link href="sports" className="hover:text-white"
+              rel="noopener noreferrer"
+              title="Go to sports page"
+              >
                 Sports
               </Link>
             </li>

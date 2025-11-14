@@ -84,7 +84,12 @@ const Authors = () => {
                 </a>
               )}
             </div>
-            <Link href={`/author/${author.slug}`} className=" mt-5">
+            <Link
+             href={`/author/${author.slug}`} 
+             className=" mt-5"
+             rel="noopener noreferrer"
+             title="Go to view profile page"
+             >
               <button className="w-full px-2 py-2 rounded-xl text-white cursor-pointer bg-[#211C84] hover:bg-[#221C84] transition font-medium">
                 View Profile
               </button>

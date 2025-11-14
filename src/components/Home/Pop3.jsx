@@ -50,6 +50,8 @@ export default function Popup3({ data }) {
               : "https://tracking.ajio.business/click?pid=87&offer_id=2&sub1=pass_your_subid%20&redirect=https://www.ajio.com/s/50to90percentoff-140961"
           }
           target="_blank"
+          rel="noopener noreferrer"
+          title="Go to popup offer page"
           className="relative"
         >
           {data.images[0] ? (

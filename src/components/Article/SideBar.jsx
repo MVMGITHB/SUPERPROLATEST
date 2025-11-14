@@ -55,6 +55,8 @@ export const SideBar = ({ pathname, data }) => {
             {" "}
             <Link
               href="https://tracking.ajio.business/click?pid=87&offer_id=2&sub1=pass_your_subid%20&redirect=https://www.ajio.com/s/50to90percentoff-140961"
+              rel="noopener noreferrer"
+              title="Tata neu event offer pop"
               target="_blank"
             >
               <Image
@@ -71,6 +73,8 @@ export const SideBar = ({ pathname, data }) => {
           <Link
             href="https://tracking.ajio.business/click?pid=87&offer_id=2&sub1=pass_your_subid%20&redirect=https://www.ajio.com/s/50to90percentoff-140961"
             target="_blank"
+            rel="noopener noreferrer"
+            title="Tata neu event offer"
           >
             <Image
               src="/ajionew.webp"
@@ -81,7 +85,11 @@ export const SideBar = ({ pathname, data }) => {
               priority
             />
           </Link>
-          // <Link href="http://trk.yasd.in/click?campaign_id=166&pub_id=945" target="_blank">
+          // <Link href="http://trk.yasd.in/click?campaign_id=166&pub_id=945" 
+          // target="_blank"
+          // rel= "noopener noreferrer"
+          // title = "promotion pop"
+          // >
 
           //   <img
           //     src="https://mvmbs.com/images/bjj1.webp"

@@ -21,6 +21,8 @@ const Summary = ({ blog }) => {
           <Link
             href="https://tracking.ajio.business/click?pid=87&offer_id=2&sub1=pass_your_subid%20&redirect=https://www.ajio.com/s/50to90percentoff-140961"
             target="_blank"
+            rel="noopener noreferrer"
+            title="Go to tata neu event offer page"
           >
 
             {/* //chnage img to image tag  */}
@@ -55,6 +57,8 @@ const Summary = ({ blog }) => {
                 <Link
                   href={`/${item?.category?.slug}/${item?.slug}`}
                   className="text-lg font-semibold text-gray-800 hover:text-indigo-600 transition-colors duration-300"
+                rel="noopener noreferrer"
+                title="Go to item page"
                 >
                   {item?.title}
                 </Link>

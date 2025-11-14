@@ -49,6 +49,8 @@ export const RightSideBar = ({ pathname, data }) => {
           <>
             <Link
               href="https://tracking.ajio.business/click?pid=87&offer_id=2&sub1=pass_your_subid%20&redirect=https://www.ajio.com/s/50to90percentoff-140961"
+              rel="noopner noreferrer"
+              title="Tata Neu Event Offer"
               target="_blank"
             >
               <Image
@@ -64,6 +66,8 @@ export const RightSideBar = ({ pathname, data }) => {
         ) : (
           <Link
             href="https://tracking.ajio.business/click?pid=87&offer_id=2&sub1=pass_your_subid%20&redirect=https://www.ajio.com/s/50to90percentoff-140961"
+            rel="noopener noreferrer"
+            title="Tata Neu Event Offer"
             target="_blank"
           >
             <Image

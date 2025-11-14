@@ -39,6 +39,8 @@ export default function NewsLayout({ blog }) {
               <Link
                 key={property.id}
                 href={`/${property.category?.slug}/${property.slug}`}
+                rel="nopener noreferrer"
+                title="Read more blog"
                 className="block"
               >
                 <div className="w-full h-96 relative cursor-pointer">
@@ -57,6 +59,8 @@ export default function NewsLayout({ blog }) {
         {blogs[currentIndex] && (
           <Link
             href={`/${blogs[currentIndex].category?.slug}/${blogs[currentIndex].slug}`}
+            rel="noopener noreferrer"
+            title="read more blog"
           >
             <h3 className="mt-4 text-center cursor-pointer hover:text-[#5E3B5E] text-[#4F1C51] font-bold text-xl md:text-2xl transition">
               {blogs[currentIndex].title}
@@ -71,6 +75,8 @@ export default function NewsLayout({ blog }) {
           <Link
             href="https://tracking.ajio.business/click?pid=87&offer_id=2&sub1=pass_your_subid%20&redirect=https://www.ajio.com/s/50to90percentoff-140961"
             target="_blank"
+            rel="noopenr noreferrer"
+            title="Go to tata neu offer page"
           >
 
             {/* //change to img to image  */}

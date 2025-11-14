@@ -92,6 +92,8 @@ export default function SearchCategory() {
                   href={`/${item?.category?.slug}/${item?.slug}`}
                   className="block px-2 py-2 text-sm text-gray-800 hover:bg-violet-100 rounded transition"
                   onClick={clearSearch}
+                  rel="noopener noreferrer"
+                  title="Read more news"
                 >
                   {item.title}
                 </Link>

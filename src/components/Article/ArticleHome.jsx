@@ -281,6 +281,8 @@ export const ArticleHome = ({ data }) => {
                   {" "}
                   <Link
                     href={`/author/${data?.author?.slug}`}
+                    rel="noopner noreferrer"
+                    title={`Read more articles by ${data?.author?.name}`}
                     className="text-blue-600"
                   >
                     {data?.author?.name}
