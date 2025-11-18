@@ -140,17 +140,56 @@ export const ArticleHome = ({ data }) => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
       />
-      <div className=" mx-auto p-4 flex flex-col md:flex-row gap-6">
+      <div className=" mx-auto p-4 flex flex-col  md:flex-row gap-6">
         {/* asidbar comment */}
         <div className=" w-full md:w-1/5 order-2 md:order-1">
           <SideBar pathname={pathname} data={data} />
         </div>
 
         <div className=" w-full md:w-3/5 mx-auto shadow-md p-4 order-1 md:order-2   overflow-y-auto scrollbar-hide">
-          <h1 className="text-2xl text-gray-600  font-bold text-center mb-4">
+          <h1 className="text-3xl text-gray-600  font-bold text-center p-1 ">
             {data.title}
           </h1>
-          <div className="w-full md:w-[800px] h-auto md:h-[400px] relative rounded-md mb-4 overflow-hidden">
+          <div className="flex  justify-center  gap-4 pb-4">
+            <div className="flex gap-2 md:flex-row justify-center" >
+              <h3 className="text-lg text-gray-700">
+                Author:{" "}
+                <strong>
+                  {" "}
+                  <Link
+                    href={`/author/${data?.author?.slug}`}
+                    rel="noopner noreferrer"
+                    title={`Read more articles by ${data?.author?.name}`}
+                    className="text-blue-600"
+                  >
+                    {data?.author?.name}
+                  </Link>
+                </strong>
+              </h3>
+              <h3 className="text-lg text-gray-600">
+                Created At:{" "}
+                <strong>
+                  {new Date(data?.author?.createdAt).toLocaleDateString()}
+                </strong>
+              </h3>
+              <h3 className="text-lg text-gray-600">
+                Updated At:{" "}
+                <strong>
+                  {new Date(data?.author?.updatedAt).toLocaleDateString()}
+                </strong>
+              </h3>
+            </div>
+
+            {/* <div>
+            <img
+  src={`${base_url}${data?.author?.image}`}
+  alt={data?.author?.name || "Author"}
+  className="hidden sm:block rounded-full w-24 h-24 object-cover border-2 border-gray-900 shadow-sm"
+/>
+
+          </div> */}
+          </div>
+          <div className="w-full  h-auto md:h-[400px]  relative rounded-md mb-4 overflow-hidden">
             {/* note : change to img tag to image tag give url in next.config website base url */}
             <Image
               src={`${base_url}${data.image}`}
@@ -272,46 +311,6 @@ export const ArticleHome = ({ data }) => {
             </>
           )
          } */}
-
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 p-4">
-            <div>
-              <h3 className="text-lg text-gray-700">
-                Author:{" "}
-                <strong>
-                  {" "}
-                  <Link
-                    href={`/author/${data?.author?.slug}`}
-                    rel="noopner noreferrer"
-                    title={`Read more articles by ${data?.author?.name}`}
-                    className="text-blue-600"
-                  >
-                    {data?.author?.name}
-                  </Link>
-                </strong>
-              </h3>
-              {/* <h3 className="text-sm text-gray-600">
-              Created At:{" "}
-              <strong>
-                {new Date(data?.author?.createdAt).toLocaleDateString()}
-              </strong>
-            </h3>
-            <h3 className="text-sm text-gray-600">
-              Updated At:{" "}
-              <strong>
-                {new Date(data?.author?.updatedAt).toLocaleDateString()}
-              </strong>
-            </h3> */}
-            </div>
-
-            {/* <div>
-            <img
-  src={`${base_url}${data?.author?.image}`}
-  alt={data?.author?.name || "Author"}
-  className="hidden sm:block rounded-full w-24 h-24 object-cover border-2 border-gray-900 shadow-sm"
-/>
-
-          </div> */}
-          </div>
 
           {/* <div>
           {data?.faqs?.length > 0 && (
