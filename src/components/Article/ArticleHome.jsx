@@ -166,14 +166,14 @@ export const ArticleHome = ({ data }) => {
                   </Link>
                 </strong>
               </h3>
-              <h3 className="text-lg text-gray-600">
+              {/* <h3 className="text-lg text-gray-600">
                 Created At:{" "}
                 <strong>
                   {new Date(data?.author?.createdAt).toLocaleDateString()}
                 </strong>
-              </h3>
+              </h3> */}
               <h3 className="text-lg text-gray-600">
-                Updated At:{" "}
+                Created At:{" "}
                 <strong>
                   {new Date(data?.author?.updatedAt).toLocaleDateString()}
                 </strong>
