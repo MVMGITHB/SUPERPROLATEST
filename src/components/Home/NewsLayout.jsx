@@ -43,7 +43,7 @@ export default function NewsLayout({ blog }) {
                 title="Read more blog"
                 className="block"
               >
-                <div className="w-full h-96 relative cursor-pointer">
+                <div className="w-full md:h-116 relative cursor-pointer">
                   <Image
                     src={`${base_url}${property.image}`}
                     alt={property.title}

@@ -189,9 +189,9 @@ export const ArticleHome = ({ data }) => {
 
           </div> */}
           </div>
-          <div className="w-full  h-auto md:h-[400px]  relative rounded-md mb-4 overflow-hidden">
+          <div className="w-full  h-auto md:h-[465px]  relative rounded-md mb-4 overflow-hidden">
             {/* note : change to img tag to image tag give url in next.config website base url */}
-            <Image
+            <img
               src={`${base_url}${data.image}`}
               alt="8th Pay Commission"
               fill
