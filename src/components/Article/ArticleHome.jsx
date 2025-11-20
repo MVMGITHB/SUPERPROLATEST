@@ -151,7 +151,7 @@ export const ArticleHome = ({ data }) => {
             {data.title}
           </h1>
           <div className="flex  justify-center  gap-4 pb-4">
-            <div className="flex gap-2 md:flex-row justify-center" >
+            <div className="flex gap-2 md:flex-row justify-center">
               <h3 className="text-lg text-gray-700">
                 Author:{" "}
                 <strong>
@@ -173,19 +173,26 @@ export const ArticleHome = ({ data }) => {
                 </strong>
               </h3> */}
               <h3 className="text-lg text-gray-600">
-                Created At:{" "}
+                Updated At:{" "}
                 <strong>
-                  {new Date(data?.author?.updatedAt).toLocaleDateString()}
+                  {/* {new Date(data?.author?.updatedAt).toLocaleDateString()} */}
+                    <time dateTime={data?.createdAt}>
+                {new Intl.DateTimeFormat("en-GB", {
+                  day: "2-digit",
+                  month: "short",
+                  year: "numeric",
+                }).format(new Date(data?.createdAt))}
+              </time>
                 </strong>
               </h3>
             </div>
 
             {/* <div>
-            <img
-  src={`${base_url}${data?.author?.image}`}
-  alt={data?.author?.name || "Author"}
-  className="hidden sm:block rounded-full w-24 h-24 object-cover border-2 border-gray-900 shadow-sm"
-/>
+             <img
+            src={`${base_url}${data?.author?.image}`}
+            alt={data?.author?.name || "Author"}
+            className="hidden sm:block rounded-full w-24 h-24 object-cover border-2 border-gray-900 shadow-sm"
+            />
 
           </div> */}
           </div>
