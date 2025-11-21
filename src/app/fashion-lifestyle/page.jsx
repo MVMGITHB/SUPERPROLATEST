@@ -17,7 +17,7 @@ const page = () => {
   return (
     <div>
       <h1 className="text-4xl text-gray-700 mt-2 p-3 lg:p-0  flex justify-center items-center font-sans font-extrabold ">
-        Latest Fashion & Lifestyle Trends, Tips & Stories
+       Fashion & Lifestyle – SuperNPro: Trends, Style & Culture
       </h1>
 
       <h2 className="text-gray-600 text-xl mt-2 p-3 lg:p-0 flex justify-center items-center font-sans">

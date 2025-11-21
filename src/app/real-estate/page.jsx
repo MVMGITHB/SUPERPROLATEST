@@ -44,7 +44,7 @@ const page = () => {
       />
 
       <h1 className="text-4xl text-gray-700 mt-2 p-3 lg:p-0 flex justify-center items-center font-sans font-extrabold ">
-        Latest Real Estate News, Trends & Market Insights
+        Real-Estate News – SuperNPro: Market Trends & Property Updates
       </h1>
       <h2 className="text-gray-600 text-xl mt-2 p-3 lg:p-0 flex justify-center items-center font-sans">
         Discover property updates, buying guides, and market movements shaping

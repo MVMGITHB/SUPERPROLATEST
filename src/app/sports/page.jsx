@@ -37,7 +37,7 @@ const page = () => {
   return (
     <div>
       <h1 className="text-4xl text-gray-700 mt-2 p-3 lg:p-0 flex justify-center items-center font-sans font-extrabold ">
-        Latest Sports News, Scores, and Highlights
+        Sports News – SuperNPro: Live Scores, Matches & Highlights
       </h1>
       <h2 className="text-gray-600 text-xl mt-2 p-3 lg:p-0 flex justify-center items-center font-sans">
         From cricket to football — get the latest updates, exclusive insights,

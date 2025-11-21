@@ -42,7 +42,7 @@ const page = () => {
       />
 
       <h1 className="text-4xl text-gray-700 mt-2 p-3 lg:p-0 flex justify-center items-center font-sans font-extrabold ">
-        Entertainment: Bollywood, Hollywood & OTT Buzz
+        Entertainment News – SuperNPro: Movies, Celebs & Lifestyle
       </h1>
       <h2 className="text-gray-600 text-xl mt-2 p-3 lg:p-0 flex justify-center items-center font-sans">
         From red carpets to reel life — get all the gossip, reviews, and

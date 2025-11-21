@@ -42,7 +42,7 @@ const page = () => {
       />
 
       <h1 className="text-4xl text-gray-700 mt-2 p-3 lg:p-0 flex justify-center items-center font-sans font-extrabold ">
-        Latest Technology News, Trends & Innovations
+        Technology News – SuperNPro: Innovations, Gadgets & Future
       </h1>
 
       <h2 className="text-gray-600 text-xl mt-2 p-3 lg:p-0 flex justify-center items-center font-sans">

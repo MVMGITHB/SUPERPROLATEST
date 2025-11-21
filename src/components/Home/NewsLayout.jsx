@@ -22,9 +22,9 @@ export default function NewsLayout({ blog }) {
 
       {/* Main Section */}
       <main className="w-full md:w-3/5 p-2 rounded-lg">
-        <h1 className="text-lg font-bold mb-4 text-gray-800">
+        <h2 className="text-lg font-bold mb-4 text-gray-800">
           Trending Topics
-        </h1>
+        </h2>
 
         {blogs.length > 0 && (
           <Carousel

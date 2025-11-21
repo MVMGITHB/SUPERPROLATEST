@@ -42,7 +42,7 @@ const page = () => {
       />
 
       <h1 className="text-4xl text-gray-700 mt-2 p-3 lg:p-0 flex justify-center items-center font-sans font-extrabold ">
-        Finance: Banking, Investments, and Business Trends
+        Finance News – SuperNPro: Markets, Economy & Investing
       </h1>
       <h2 className="text-gray-600 text-xl mt-2 p-3 lg:p-0 flex justify-center items-center font-sans">
         Explore business updates, stock market movements, and smart money
