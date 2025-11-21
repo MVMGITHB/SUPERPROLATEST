@@ -61,9 +61,9 @@ async function generateSitemap() {
 </urlset>`;
 
     fs.writeFileSync(path.join("public", "sitemap.xml"), fullSitemap, "utf8");
-    console.log("✅ Sitemap generated successfully at public/sitemap.xml");
+    // console.log("✅ Sitemap generated successfully at public/sitemap.xml");
   } catch (error) {
-    console.error("❌ Error generating sitemap:", error);
+    // console.error("❌ Error generating sitemap:", error);
   }
 }
 

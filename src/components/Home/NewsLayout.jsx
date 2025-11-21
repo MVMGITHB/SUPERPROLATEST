@@ -78,14 +78,13 @@ export default function NewsLayout({ blog }) {
             rel="noopenr noreferrer"
             title="Go to tata neu offer page"
           >
-
             {/* //change to img to image  */}
             <Image
               src="/ajionew.webp"
               alt="Tata Neu Event"
-              width={1920} // replace with actual image width
-              height={480} // replace with actual image height
-              className="w-full h-[480px] object-cover rounded-md lg:rounded-none"
+              width={1920}
+              height={480}
+              className="hidden md:block w-full h-[480px] object-cover rounded-md lg:rounded-none"
               priority
             />
           </Link>

@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["connect.couponsculture.com"],
+    domains: ["connect.couponsculture.com" , "api.shopsmaart.com"],
   },
 
   async headers() {

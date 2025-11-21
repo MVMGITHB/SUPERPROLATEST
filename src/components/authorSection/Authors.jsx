@@ -13,11 +13,11 @@ const Authors = () => {
   const fetchAuthors = async () => {
     try {
       const response = await axios.get(`${base_url}/api/auth/getAllAdmin`);
-      console.log("authors", response.data?.users);
+      // console.log("authors", response.data?.users);
 
       setAuthors(response.data?.users || []);
     } catch (err) {
-      console.error("Error fetching authors:", err);
+      // console.error("Error fetching authors:", err);
     }
   };
 
