@@ -18,7 +18,7 @@ export default function ReadMore({ text, limit = 200 }) {
       {isLong && (
         <button
           onClick={() => setExpanded(!expanded)}
-          className="text-blue-600 underline mt-4 block mx-auto"
+          className="text-blue-600 underline -mt-1 block mx-auto"
         >
           {expanded ? "Read Less" : "Read More"}
         </button>

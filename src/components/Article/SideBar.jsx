@@ -54,14 +54,14 @@ export const SideBar = ({ pathname, data }) => {
           <>
             {" "}
             <Link
-              href="https://tracking.ajio.business/click?pid=87&offer_id=2&sub1=pass_your_subid%20&redirect=https://www.ajio.com/s/50to90percentoff-140961"
+              href="#"
               rel="noopener noreferrer"
-              title="Tata neu event offer pop"
-              target="_blank"
+              title="Aditya Birla PL"
+              // target="_blank"
             >
               <Image
-                src="/ajionew.webp"
-                alt="Tata Neu Event"
+                src="/adityaBirla.png"
+                alt="Go to Aditya Birla PL"
                 width={1920} // replace with actual image width
                 height={480} // replace with actual image height
                 className="w-full h-[480px] object-cover rounded-md"
@@ -71,17 +71,17 @@ export const SideBar = ({ pathname, data }) => {
           </>
         ) : (
           <Link
-            href="https://tracking.ajio.business/click?pid=87&offer_id=2&sub1=pass_your_subid%20&redirect=https://www.ajio.com/s/50to90percentoff-140961"
-            target="_blank"
+            href="#"
+            // target="_blank"
             rel="noopener noreferrer"
-            title="Tata neu event offer"
+            title="Aditya Birla PL"
           >
             <Image
-              src="/ajionew.webp"
-              alt="Tata Neu Event"
+              src="/adityaBirla.png"
+              alt="Go to Aditya Birla PL"
               width={1920} // replace with actual image width
               height={480} // replace with actual image height
-              className="w-full h-[480px] object-cover rounded-md"
+              className="w-full h-[480px] object-contain rounded-md"
               priority
             />
           </Link>

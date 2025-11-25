@@ -94,9 +94,9 @@ const page = () => {
         management strategies.
       </h2>
 
-      <div className="p-3 lg:p-0 flex justify-center">
+      <div className="p-3 lg:p-0 flex mt-5 justify-center">
               <div className="max-w-3xl">
-                <ReadMore text={content} limit={100} className="mt-1.5" />
+                <ReadMore text={content} limit={200} className="mt-1.5" />
               </div>
             </div>
 

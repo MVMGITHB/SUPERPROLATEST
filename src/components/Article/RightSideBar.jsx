@@ -48,14 +48,14 @@ export const RightSideBar = ({ pathname, data }) => {
         {pathname === "/automobile/fastag-annual-pass" ? (
           <>
             <Link
-              href="https://tracking.ajio.business/click?pid=87&offer_id=2&sub1=pass_your_subid%20&redirect=https://www.ajio.com/s/50to90percentoff-140961"
+              href="#"
               rel="noopner noreferrer"
-              title="Tata Neu Event Offer"
-              target="_blank"
+              title="Go to Aditya Birla PL"
+              // target="_blank"
             >
               <Image
                 src="/ajionew.webp"
-                alt="Tata Neu Event"
+                alt="Aditya Birla PL"
                 width={1920} // replace with actual image width
                 height={480} // replace with actual image height
                 className="w-full h-[480px] object-cover rounded-md"
@@ -65,17 +65,17 @@ export const RightSideBar = ({ pathname, data }) => {
           </>
         ) : (
           <Link
-            href="https://tracking.ajio.business/click?pid=87&offer_id=2&sub1=pass_your_subid%20&redirect=https://www.ajio.com/s/50to90percentoff-140961"
+            href="#"
             rel="noopener noreferrer"
-            title="Tata Neu Event Offer"
-            target="_blank"
+            title="Go to Aditya Birla PL"
+            // target="_blank"
           >
             <Image
-              src="/ajionew.webp"
-              alt="Tata Neu Event"
+              src="/adityaBirla.png"
+              alt="Aditya Birla PL"
               width={1920} // replace with actual image width
               height={480} // replace with actual image height
-              className="w-full h-[480px] object-cover rounded-md"
+              className="w-full h-[480px] object-contain rounded-md"
               priority
             />
           </Link>

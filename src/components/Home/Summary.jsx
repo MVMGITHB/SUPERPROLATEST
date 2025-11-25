@@ -19,19 +19,18 @@ const Summary = ({ blog }) => {
       <aside className="w-full md:w-1/5">
         <div className="sticky top-4 bg-gray-100 p-4 lg:p-0 rounded-lg lg:rounded-none shadow-md ">
           <Link
-            href="https://tracking.ajio.business/click?pid=87&offer_id=2&sub1=pass_your_subid%20&redirect=https://www.ajio.com/s/50to90percentoff-140961"
-            target="_blank"
+            href="#"
+            // target="_blank"
             rel="noopener noreferrer"
-            title="Go to tata neu event offer page"
+            title="Go to Aditya Birla PL"
           >
-
             {/* //chnage img to image tag  */}
             <Image
-              src="/ajionew.webp"
-              alt="Tata Neu Event"
+              src="/adityaBirla.png"
+              alt="Aditya Birla PL"
               width={1920} // replace with actual image width
               height={480} // replace with actual image height
-              className="w-full h-[480px] object-cover rounded-md lg:rounded-none"
+              className="w-full h-[480px] object-contain rounded-md lg:rounded-none"
               priority
             />
           </Link>
@@ -39,32 +38,35 @@ const Summary = ({ blog }) => {
       </aside>
 
       <main className="w-full md:w-3/5 flex flex-col gap-4 p-2 mt-[-25px]">
-        <h2 className="text-2xl font-bold text-gray-700">Recent Blogs</h2>
+        <h2 className="text-2xl font-bold text-gray-700">Recent News</h2>
         {Array.isArray(blog) &&
           blog.slice(0, visibleCount).map((item, index) => (
-            <div
-              key={index}
-              className="w-full p-4 flex flex-col md:flex-row items-center gap-4 bg-gray-100 rounded-lg shadow hover:shadow-lg transition-shadow duration-300"
-            >
-              <img
-                src={`${base_url}${item?.image}`}
-                alt={item?.title}
-                // fill
-                className="rounded-xl w-full md:w-40 h-auto object-cover"
-                // priority
-              />
-              <div>
-                <Link
-                  href={`/${item?.category?.slug}/${item?.slug}`}
-                  className="text-lg font-semibold text-gray-800 hover:text-indigo-600 transition-colors duration-300"
-                rel="noopener noreferrer"
-                title="Go to item page"
-                >
-                  {item?.title}
-                </Link>
-                <p>{item?.mdesc}</p>
+            <Link href={`/${item?.category?.slug}/${item?.slug}`}>
+              <div
+                key={index}
+                className="w-full p-4 flex flex-col md:flex-row items-center gap-4 bg-gray-100 rounded-lg shadow hover:shadow-lg transition-shadow duration-300"
+              >
+                {/* <div className="w-full md:w-[160px] h-[90px] flex-shrink-0 overflow-hidden rounded-xl"> */}
+
+                {/* <a href={`/${item?.category?.slug}/${item?.slug}`}> */}
+                <Image
+                  src={`${base_url}${item?.image}`}
+                  alt={item?.title}
+                  width={160}
+                  height={90}
+                  className=" w-full md:w-[160px] h-[300px] md:h-[90px] flex-shrink-0 overflow-hidden rounded-xl  md:object-cover"
+                />
+                {/* </a> */}
+
+                {/* </div> */}
+                <div>
+                  <p className="text-lg font-semibold text-gray-800 hover:text-indigo-600 transition-colors duration-300">
+                    {item?.title}
+                  </p>
+                  <p>{item?.mdesc}</p>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
 
         {visibleCount < sortedData.length && (

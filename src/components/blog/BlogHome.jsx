@@ -45,6 +45,9 @@ export const BlogHome = ({ url }) => {
                   key={index}
                   className="bg-[#f4f4f5] border border-gray-200 rounded-xl shadow-sm hover:shadow-lg transition-transform duration-300 hover:scale-[1.03]"
                 >
+                 <Link href={`${card?.category?.slug}/${card?.slug}?utm_source=supernpro.com/&utm_medium=email&utm_campaign=${card?.slug}`}
+                 rel="noopener noreferrer"
+                 >
                   <img
                     src={`${base_url}${card.image}`}
                     alt={card.title}
@@ -53,6 +56,7 @@ export const BlogHome = ({ url }) => {
                     //  height={192}
                     className="w-full h-48 object-cover rounded-t-xl"
                   />
+                 </Link>
                   <div className="p-2 text-center">
                     <Link
                       href={`${card?.category?.slug}/${card?.slug}?utm_source=supernpro.com/&utm_medium=email&utm_campaign=${card?.slug}`}

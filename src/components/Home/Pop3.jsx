@@ -94,8 +94,8 @@ export default function Popup3({ data }) {
 
           {!data.images[0] && !data.images[1] && (
             <Image
-              src="/ajionew.webp"
-              alt="Tata Neu Event"
+              src="/adityaBirla.png"
+              alt="Aditya Birla PL"
               width={1920}
               height={1080}
               className="block md:hidden h-auto max-h-[60vh] object-contain rounded-2xl"

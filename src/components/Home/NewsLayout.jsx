@@ -22,9 +22,18 @@ export default function NewsLayout({ blog }) {
 
       {/* Main Section */}
       <main className="w-full md:w-3/5 p-2 rounded-lg">
-        <h2 className="text-lg font-bold mb-4 text-gray-800">
-          Trending Topics
-        </h2>
+      
+
+        <div className="flex justify-center flex-col">
+           <h1 className="text-[32px]  font-bold text-center  text-gray-800">
+          SuperNPro – Real-Time Updates in News, Finance & Tech
+          
+        </h1>
+
+        <span className=" text-[16px] text-center w-[300px] mx-auto">Trending Topics</span>
+        </div>
+       
+        
 
         {blogs.length > 0 && (
           <Carousel
@@ -73,18 +82,18 @@ export default function NewsLayout({ blog }) {
       <aside className="w-full md:w-1/5 rounded-lg">
         <div className="flex flex-col gap-2">
           <Link
-            href="https://tracking.ajio.business/click?pid=87&offer_id=2&sub1=pass_your_subid%20&redirect=https://www.ajio.com/s/50to90percentoff-140961"
-            target="_blank"
+            href="#"
+            // target="_blank"
             rel="noopenr noreferrer"
             title="Go to tata neu offer page"
           >
             {/* //change to img to image  */}
             <Image
-              src="/ajionew.webp"
-              alt="Tata Neu Event"
+              src="/adityaBirla.png"
+              alt="Aditya Birla PL"
               width={1920}
               height={480}
-              className="hidden md:block w-full h-[480px] object-cover rounded-md lg:rounded-none"
+              className="hidden md:block w-full h-[480px] object-contain rounded-md lg:rounded-none"
               priority
             />
           </Link>

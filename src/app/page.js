@@ -116,9 +116,9 @@ const breadcrumbSchema = {
 
       {/* Your Home component */}
 
- <h1 className="text-4xl text-gray-700 mt-2 p-3 lg:p-0 flex justify-center items-center font-sans font-extrabold ">
+ {/* <h1 className="text-4xl text-gray-700 mt-2 p-3 lg:p-0 flex justify-center items-center font-sans font-extrabold ">
         SuperNPro – Real-Time Updates in News, Finance & Tech
-      </h1>
+      </h1> */}
 
       <Home />
     </div>

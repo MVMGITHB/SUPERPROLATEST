@@ -198,10 +198,12 @@ export const ArticleHome = ({ data }) => {
           </div>
           <div className="w-full  h-auto md:h-[465px]  relative rounded-md mb-4 overflow-hidden">
             {/* note : change to img tag to image tag give url in next.config website base url */}
-            <img
+            <Image
               src={`${base_url}${data.image}`}
-              alt="8th Pay Commission"
-              fill
+              alt="news content"
+              // fixed image dimension
+              width={850}
+              height={450}
               className="object-cover rounded-md"
               priority
             />
