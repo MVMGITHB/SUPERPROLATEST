@@ -48,13 +48,13 @@ export const RightSideBar = ({ pathname, data }) => {
         {pathname === "/automobile/fastag-annual-pass" ? (
           <>
             <Link
-              href="#"
+              href="http://www.intellectmedia.net/trk/click.asp?cid=3203&pid=522&did=23841&code=314"
               rel="noopner noreferrer"
               title="Go to Aditya Birla PL"
-              // target="_blank"
+              target="_blank"
             >
               <Image
-                src="/ajionew.webp"
+                src="/adityaBirla.png"
                 alt="Aditya Birla PL"
                 width={1920} // replace with actual image width
                 height={480} // replace with actual image height
@@ -65,10 +65,10 @@ export const RightSideBar = ({ pathname, data }) => {
           </>
         ) : (
           <Link
-            href="#"
+            href="http://www.intellectmedia.net/trk/click.asp?cid=3203&pid=522&did=23841&code=314"
             rel="noopener noreferrer"
             title="Go to Aditya Birla PL"
-            // target="_blank"
+            target="_blank"
           >
             <Image
               src="/adityaBirla.png"

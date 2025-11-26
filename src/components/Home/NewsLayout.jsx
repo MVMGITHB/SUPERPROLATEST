@@ -69,7 +69,7 @@ export default function NewsLayout({ blog }) {
           <Link
             href={`/${blogs[currentIndex].category?.slug}/${blogs[currentIndex].slug}`}
             rel="noopener noreferrer"
-            title="read more blog"
+            title="read blog"
           >
             <h3 className="mt-4 text-center cursor-pointer hover:text-[#5E3B5E] text-[#4F1C51] font-bold text-xl md:text-2xl transition">
               {blogs[currentIndex].title}
@@ -82,8 +82,8 @@ export default function NewsLayout({ blog }) {
       <aside className="w-full md:w-1/5 rounded-lg">
         <div className="flex flex-col gap-2">
           <Link
-            href="#"
-            // target="_blank"
+            href="http://www.intellectmedia.net/trk/click.asp?cid=3203&pid=522&did=23841&code=314"
+            target="_blank"
             rel="noopenr noreferrer"
             title="Go to tata neu offer page"
           >

@@ -54,7 +54,8 @@ export const BlogHome = ({ url }) => {
                     // height proportional to h-48 (48 * 4)
                     //  width={1920}
                     //  height={192}
-                    className="w-full h-48 object-cover rounded-t-xl"
+                    // chnages xl to md , for md:use object-fill
+                    className="w-full h-48 object-cover md:object-fill rounded-t-md"
                   />
                  </Link>
                   <div className="p-2 text-center">

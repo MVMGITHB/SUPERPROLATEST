@@ -19,8 +19,8 @@ const Summary = ({ blog }) => {
       <aside className="w-full md:w-1/5">
         <div className="sticky top-4 bg-gray-100 p-4 lg:p-0 rounded-lg lg:rounded-none shadow-md ">
           <Link
-            href="#"
-            // target="_blank"
+            href="http://www.intellectmedia.net/trk/click.asp?cid=3203&pid=522&did=23841&code=314"
+            target="_blank"
             rel="noopener noreferrer"
             title="Go to Aditya Birla PL"
           >
@@ -54,7 +54,7 @@ const Summary = ({ blog }) => {
                   alt={item?.title}
                   width={160}
                   height={90}
-                  className=" w-full md:w-[160px] h-[300px] md:h-[90px] flex-shrink-0 overflow-hidden rounded-xl  md:object-cover"
+                  className=" w-full md:w-[160px] h-[300px] md:h-[90px] flex-shrink-0 overflow-hidden rounded-sm  md:object-cover"
                 />
                 {/* </a> */}
 

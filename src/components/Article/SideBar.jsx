@@ -54,10 +54,10 @@ export const SideBar = ({ pathname, data }) => {
           <>
             {" "}
             <Link
-              href="#"
+              href="http://www.intellectmedia.net/trk/click.asp?cid=3203&pid=522&did=23841&code=314"
               rel="noopener noreferrer"
               title="Aditya Birla PL"
-              // target="_blank"
+              target="_blank"
             >
               <Image
                 src="/adityaBirla.png"
@@ -71,8 +71,8 @@ export const SideBar = ({ pathname, data }) => {
           </>
         ) : (
           <Link
-            href="#"
-            // target="_blank"
+            href="http://www.intellectmedia.net/trk/click.asp?cid=3203&pid=522&did=23841&code=314"
+            target="_blank"
             rel="noopener noreferrer"
             title="Aditya Birla PL"
           >

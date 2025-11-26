@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { base_url } from "../Helper/helper";
+import Image from "next/image";
 
 const SimilarBlogs = ({ blogs }) => {
   const getRandomBlogs = (array, count) => {
@@ -29,11 +30,18 @@ const SimilarBlogs = ({ blogs }) => {
                   {property.title}
                 </h3>
               </div>
-              <div className="w-25 h-25 flex-shrink-0">
-                <img
+              <div className="w-35 h-26 flex-shrink-0">
+                {/* <img
                   src={`${base_url}${property.image}`}
                   alt={property.title}
                   className="w-full h-full object-cover rounded-md"
+                /> */}
+                <Image
+                  src={`${base_url}${property.image}`}
+                  alt={property.title}
+                  width={160}
+                  height={90}
+                  className="w-full h-full overflow-hidden object-bottom rounded-md md:object-fill md:rounded-sm"
                 />
               </div>
             </div>
