@@ -19,14 +19,14 @@ const Summary = ({ blog }) => {
       <aside className="w-full md:w-1/5">
         <div className="sticky top-4 bg-gray-100 p-4 lg:p-0 rounded-lg lg:rounded-none shadow-md ">
           <Link
-            href="http://www.intellectmedia.net/trk/click.asp?cid=3203&pid=522&did=23841&code=314"
+            href="http://www.intellectmedia.net/trk/click.asp?cid=3203&pid=661&did=23840&code=326"
             target="_blank"
             rel="noopener noreferrer"
             title="Go to Aditya Birla PL"
           >
             {/* //chnage img to image tag  */}
             <Image
-              src="/adityaBirla.png"
+              src="/adityaBirla.webp"
               alt="Aditya Birla PL"
               width={1920} // replace with actual image width
               height={480} // replace with actual image height

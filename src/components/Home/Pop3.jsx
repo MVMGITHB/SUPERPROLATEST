@@ -94,7 +94,7 @@ export default function Popup3({ data }) {
 
           {!data.images[0] && !data.images[1] && (
             <Image
-              src="/adityaBirla.png"
+              src="/adityaBirla.webp"
               alt="Aditya Birla PL"
               width={1920}
               height={1080}

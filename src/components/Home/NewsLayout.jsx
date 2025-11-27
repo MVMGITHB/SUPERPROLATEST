@@ -82,14 +82,13 @@ export default function NewsLayout({ blog }) {
       <aside className="w-full md:w-1/5 rounded-lg">
         <div className="flex flex-col gap-2">
           <Link
-            href="http://www.intellectmedia.net/trk/click.asp?cid=3203&pid=522&did=23841&code=314"
+            href="http://www.intellectmedia.net/trk/click.asp?cid=3203&pid=661&did=23840&code=326"
             target="_blank"
             rel="noopenr noreferrer"
-            title="Go to tata neu offer page"
           >
             {/* //change to img to image  */}
             <Image
-              src="/adityaBirla.png"
+              src="/adityaBirla.webp"
               alt="Aditya Birla PL"
               width={1920}
               height={480}

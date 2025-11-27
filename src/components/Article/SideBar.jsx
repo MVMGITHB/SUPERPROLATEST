@@ -54,13 +54,13 @@ export const SideBar = ({ pathname, data }) => {
           <>
             {" "}
             <Link
-              href="http://www.intellectmedia.net/trk/click.asp?cid=3203&pid=522&did=23841&code=314"
+              href="http://www.intellectmedia.net/trk/click.asp?cid=3203&pid=661&did=23840&code=326"
               rel="noopener noreferrer"
               title="Aditya Birla PL"
               target="_blank"
             >
               <Image
-                src="/adityaBirla.png"
+                src="/adityaBirla.webp"
                 alt="Go to Aditya Birla PL"
                 width={1920} // replace with actual image width
                 height={480} // replace with actual image height
@@ -71,13 +71,13 @@ export const SideBar = ({ pathname, data }) => {
           </>
         ) : (
           <Link
-            href="http://www.intellectmedia.net/trk/click.asp?cid=3203&pid=522&did=23841&code=314"
+            href="http://www.intellectmedia.net/trk/click.asp?cid=3203&pid=661&did=23840&code=326"
             target="_blank"
             rel="noopener noreferrer"
             title="Aditya Birla PL"
           >
             <Image
-              src="/adityaBirla.png"
+              src="/adityaBirla.webp"
               alt="Go to Aditya Birla PL"
               width={1920} // replace with actual image width
               height={480} // replace with actual image height
