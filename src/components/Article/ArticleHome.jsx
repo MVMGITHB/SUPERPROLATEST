@@ -153,9 +153,8 @@ export const ArticleHome = ({ data }) => {
           <div className="flex  justify-center  gap-4 pb-4">
             <div className="flex gap-2 md:flex-row justify-center">
               <h3 className="text-lg text-gray-700">
-                Author:{" "}
+                Author:
                 <strong>
-                  {" "}
                   <Link
                     href={`/author/${data?.author?.slug}`}
                     rel="noopner noreferrer"
@@ -173,7 +172,7 @@ export const ArticleHome = ({ data }) => {
                 </strong>
               </h3> */}
               <h3 className="text-lg text-gray-600">
-                Updated At:{" "}
+                Updated At:
                 <strong>
                   {/* {new Date(data?.author?.updatedAt).toLocaleDateString()} */}
                     <time dateTime={data?.createdAt}>
@@ -188,9 +187,11 @@ export const ArticleHome = ({ data }) => {
             </div>
 
             {/* <div>
-             <img
+             <Image
             src={`${base_url}${data?.author?.image}`}
             alt={data?.author?.name || "Author"}
+            width={}
+            height={}
             className="hidden sm:block rounded-full w-24 h-24 object-cover border-2 border-gray-900 shadow-sm"
             />
 
@@ -205,7 +206,6 @@ export const ArticleHome = ({ data }) => {
               width={850}
               height={450}
               className="object-cover rounded-md"
-              priority
             />
           </div>
 

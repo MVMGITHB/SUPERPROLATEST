@@ -49,7 +49,7 @@ export const SideBar = ({ pathname, data }) => {
 
       </div> */}
 
-      <div className="w-full bg-white shadow-md rounded-xl overflow-hidden">
+      <div className="w-full bg-white shadow-md rounded-xl overflow-hidden hidden md:block">
         {pathname === "/automobile/fastag-annual-pass" ? (
           <>
             {" "}
@@ -65,7 +65,7 @@ export const SideBar = ({ pathname, data }) => {
                 width={1920} // replace with actual image width
                 height={480} // replace with actual image height
                 className="w-full h-[480px] object-cover rounded-md"
-                priority
+                
               />
             </Link>
           </>
@@ -82,7 +82,7 @@ export const SideBar = ({ pathname, data }) => {
               width={1920} // replace with actual image width
               height={480} // replace with actual image height
               className="w-full h-[480px] object-contain rounded-md"
-              priority
+              
             />
           </Link>
           // <Link href="http://trk.yasd.in/click?campaign_id=166&pub_id=945" 

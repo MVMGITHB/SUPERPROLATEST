@@ -78,7 +78,7 @@ const Login = () => {
             width={1200}
             height={675}
             className="w-full h-full object-cover md:object-contain p-4"
-            priority
+            
           />
         </div>
 

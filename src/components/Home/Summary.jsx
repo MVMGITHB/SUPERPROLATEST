@@ -31,7 +31,6 @@ const Summary = ({ blog }) => {
               width={1920} // replace with actual image width
               height={480} // replace with actual image height
               className="w-full h-[480px] object-contain rounded-md lg:rounded-none"
-              priority
             />
           </Link>
         </div>

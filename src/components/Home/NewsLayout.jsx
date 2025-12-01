@@ -58,6 +58,7 @@ export default function NewsLayout({ blog }) {
                     alt={property.title}
                     fill
                     className="w-full h-full object-cover rounded-lg"
+                    priority
                   />
                 </div>
               </Link>
@@ -80,7 +81,7 @@ export default function NewsLayout({ blog }) {
 
       {/* Right Sidebar */}
       <aside className="w-full md:w-1/5 rounded-lg">
-        <div className="flex flex-col gap-2">
+        <div className="flex-col gap-2 hidden md:block">
           <Link
             href="http://www.intellectmedia.net/trk/click.asp?cid=3203&pid=661&did=23840&code=326"
             target="_blank"
@@ -93,7 +94,6 @@ export default function NewsLayout({ blog }) {
               width={1920}
               height={480}
               className="hidden md:block w-full h-[480px] object-contain rounded-md lg:rounded-none"
-              priority
             />
           </Link>
         </div>

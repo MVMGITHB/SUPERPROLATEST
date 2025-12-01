@@ -1,4 +1,5 @@
-import { Home } from "@/components/Home/Home";
+import Home from "@/components/Home/Home";
+import { base_url } from "@/components/Helper/helper";
 
 export const metadata = {
   title: "Supernpro | Breaking News, Trends & Insights Across Every Industry",
@@ -8,16 +9,21 @@ export const metadata = {
   alternates: {
     canonical: "./",
   },
-  // robots: {
-  //   index: false,
-  //   follow: false,
-  // },
 };
 
-export default function Page() {
+// SERVER SIDE DATA FETCHING (SEO Optimized)
+async function getBlogData() {
+  const res = await fetch(`${base_url}/api/blog/getAllBlog`, {
+    cache: "no-store", // ensures latest news 
+  });
 
+  return res.json();
+}
 
-const breadcrumbSchema = {
+export default async function Page() {
+  const blog = await getBlogData(); // Fetch on server
+
+  const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
@@ -48,7 +54,7 @@ const breadcrumbSchema = {
       {
         "@type": "ListItem",
         position: 5,
-        name: "Entertiment",
+        name: "Entertainment",
         item: "https://supernpro.com/entertainment",
       },
       {
@@ -72,14 +78,12 @@ const breadcrumbSchema = {
       {
         "@type": "ListItem",
         position: 9,
-        name: "sports",
+        name: "Sports",
         item: "https://supernpro.com/sports",
       },
     ],
   };
 
-
-  // JSON-LD for Corporation
   const corporationSchema = {
     "@context": "https://schema.org",
     "@type": "Corporation",
@@ -92,21 +96,13 @@ const breadcrumbSchema = {
     ],
   };
 
-
-  
-
   return (
     <div>
-
-       {/* // add breadcrumbSchema  */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
-
-
-      {/* Inject JSON-LD safely */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -114,13 +110,8 @@ const breadcrumbSchema = {
         }}
       />
 
-      {/* Your Home component */}
-
- {/* <h1 className="text-4xl text-gray-700 mt-2 p-3 lg:p-0 flex justify-center items-center font-sans font-extrabold ">
-        SuperNPro – Real-Time Updates in News, Finance & Tech
-      </h1> */}
-
-      <Home />
+      {/* Pass server-fetched blog data */}
+      <Home blog={blog} />
     </div>
   );
 }

@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { X } from "lucide-react";
-import Link from "next/link";
+
 
 export default function Popup() {
   const [visible, setVisible] = useState(false);

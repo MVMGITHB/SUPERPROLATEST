@@ -57,10 +57,12 @@ export default function Popup3({ data }) {
           {data.images[0] ? (
             <>
               {" "}
-              <img
+              <Image
                 src={`${base_url}${data.images[0]}`}
                 alt="Popup"
-                className=" hidden md:block h-auto max-h-[60vh] object-contain rounded-2xl "
+                width={full}
+                height={auto}
+                className="hidden md:block h-auto max-h-[60vh] object-contain rounded-2xl "
               />
             </>
           ) : (
@@ -99,7 +101,7 @@ export default function Popup3({ data }) {
               width={1920}
               height={1080}
               className="block md:hidden h-auto max-h-[60vh] object-contain rounded-2xl"
-              priority
+              
             />
           )}
         </Link>

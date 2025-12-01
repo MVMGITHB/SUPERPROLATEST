@@ -63,7 +63,6 @@ const Register = () => {
             width={1200}
             height={800}
             className="w-full h-full object-cover md:object-contain p-4"
-            priority
           />
         </div>
 

@@ -1,7 +1,5 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { LeftSidebar } from "./LeftSifebar";
-import { RightSide } from "./RightSide";
 import Link from "next/link";
 import axios from "axios";
 import { base_url } from "../Helper/helper";
@@ -48,12 +46,14 @@ export const BlogHome = ({ url }) => {
                  <Link href={`${card?.category?.slug}/${card?.slug}?utm_source=supernpro.com/&utm_medium=email&utm_campaign=${card?.slug}`}
                  rel="noopener noreferrer"
                  >
-                  <img
+
+                  {/* // change img to next image */}
+                  <Image
                     src={`${base_url}${card.image}`}
                     alt={card.title}
                     // height proportional to h-48 (48 * 4)
-                    //  width={1920}
-                    //  height={192}
+                     width={1920}
+                     height={192}
                     // chnages xl to md , for md:use object-fill
                     className="w-full h-48 object-cover md:object-fill rounded-t-md"
                   />
