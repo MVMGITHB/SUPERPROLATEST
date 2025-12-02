@@ -49,7 +49,7 @@ export default function NewsLayout({ blog }) {
                 key={property.id}
                 href={`/${property.category?.slug}/${property.slug}`}
                 rel="nopener noreferrer"
-                title="Read more blog"
+                title="Read blog content"
                 className="block"
               >
                 <div className="w-full md:h-116 relative cursor-pointer">
@@ -58,7 +58,6 @@ export default function NewsLayout({ blog }) {
                     alt={property.title}
                     fill
                     className="w-full h-full object-cover rounded-lg"
-                    priority
                   />
                 </div>
               </Link>

@@ -130,17 +130,19 @@ export default function Footer() {
           <div className="flex space-x-4">
             <a
               href="https://www.facebook.com/supernproofficial/"
-              className="hover:text-gray-300"
+              className="hover:text-blue-500"
             >
               <FaFacebook size={24} />
             </a>
-            <a href="https://x.com/supernpro" className="hover:text-gray-300">
+            <a href="https://x.com/supernpro" 
+            className="hover:text-blue-500"
+            >
               <FaTwitter size={24} />
             </a>
 
             <a
               href="https://www.instagram.com/supernproinfo/"
-              className="hover:text-gray-300"
+              className="hover:text-pink-500"
             >
               <FaInstagram size={24} />
             </a>
