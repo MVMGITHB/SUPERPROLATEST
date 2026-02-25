@@ -20,7 +20,7 @@ export async function generateMetadata({ params }) {
     };
   }
 
-  const url = `/blog/${slugName}`;
+  const url = `/automobile/${slugName}`;
   const imageUrl =
     post?.mimage?.startsWith("http")
       ? post.mimage
