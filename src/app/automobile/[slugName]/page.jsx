@@ -43,7 +43,7 @@ export async function generateMetadata({ params }) {
       type: "article",
       images: [
         {
-          url: imageUrl,
+          url:`${base_url}${post.image}` || imageUrl,
           width: 1200,
           height: 630,
         },
