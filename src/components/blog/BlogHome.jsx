@@ -43,7 +43,7 @@ export const BlogHome = ({ url }) => {
                   key={index}
                   className="bg-[#f4f4f5] border border-gray-200 rounded-xl shadow-sm hover:shadow-lg transition-transform duration-300 hover:scale-[1.03]"
                 >
-                 <Link href={`${card?.category?.slug}/${card?.slug}?utm_source=supernpro.com/&utm_medium=email&utm_campaign=${card?.slug}`}
+                 <Link href={`${card?.category?.slug}/${card?.slug}`}
                  rel="noopener noreferrer"
                  >
 
@@ -60,7 +60,7 @@ export const BlogHome = ({ url }) => {
                  </Link>
                   <div className="p-2 text-center">
                     <Link
-                      href={`${card?.category?.slug}/${card?.slug}?utm_source=supernpro.com/&utm_medium=email&utm_campaign=${card?.slug}`}
+                      href={`${card?.category?.slug}/${card?.slug}`}
                       className="text-md font-semibold text-[#091057] hover:text-[#313561] transition-colors duration-200"
                       rel="noopenr noreferrer"
                       title="Go to title page read full blog"
