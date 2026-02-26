@@ -97,7 +97,7 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="real-estate" className="hover:text-white"
+              <Link href="/real-estate" className="hover:text-white"
               rel="noopener noreferrer"
               title="Go to real e-state page"
               >
