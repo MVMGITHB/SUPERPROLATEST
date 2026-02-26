@@ -26,7 +26,7 @@ export default function MainPopup() {
       }
     }
 
-    getPopup();
+    // getPopup();
 
     // show popup after 5 seconds
     const timer = setTimeout(() => {
@@ -58,7 +58,7 @@ export default function MainPopup() {
           ✕
         </button>
 
-        <Link href={popup.linkArray?.[0]} target="_blank">
+        {/* <Link href={popup.linkArray?.[0]} target="_blank">
           <Image
             src={"https://api.shopsmaart.com" + popup.images?.[0]}
             alt="Popup"
@@ -66,7 +66,7 @@ export default function MainPopup() {
             height={900}
             className="w-full h-auto rounded-xl"
           />
-        </Link>
+        </Link> */}
       </div>
 
       <style>
