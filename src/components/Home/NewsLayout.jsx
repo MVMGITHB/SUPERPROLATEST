@@ -7,6 +7,7 @@ import Link from "next/link";
 import SimilarBlogs from "./SimilarBlogs";
 import { base_url } from "../Helper/helper";
 
+
 import Image from "next/image";
 
 export default function NewsLayout({ blog }) {
@@ -22,18 +23,15 @@ export default function NewsLayout({ blog }) {
 
       {/* Main Section */}
       <main className="w-full md:w-3/5 p-2 rounded-lg">
-      
-
         <div className="flex justify-center flex-col">
-           <h1 className="text-[32px]  font-bold text-center  text-gray-800">
-          SuperNPro – Real-Time Updates in News, Finance & Tech
-          
-        </h1>
+          <h1 className="text-[32px]  font-bold text-center  text-gray-800">
+            SuperNPro – Real-Time Updates in News, Finance & Tech
+          </h1>
 
-        <span className=" text-[16px] text-center w-[300px] mx-auto">Trending Topics</span>
+          <span className=" text-[16px] text-center w-[300px] mx-auto">
+            Trending Topics
+          </span>
         </div>
-       
-        
 
         {blogs.length > 0 && (
           <Carousel
@@ -44,7 +42,7 @@ export default function NewsLayout({ blog }) {
             showIndicators={false}
             onChange={(index) => setCurrentIndex(index)}
           >
-            {blogs.map((property) => (
+            {blogs.slice(0, 5).map((property , index) => (
               <Link
                 key={property.id}
                 href={`/${property.category?.slug}/${property.slug}`}
@@ -55,6 +53,8 @@ export default function NewsLayout({ blog }) {
                 <div className="w-full md:h-116 relative cursor-pointer">
                   <Image
                     src={`${base_url}${property.image}`}
+                    priority={index === 0}
+                    sizes="(max-width: 768px) 100vw, 60vw"
                     alt={property.title}
                     fill
                     className="w-full h-full object-cover rounded-lg"
@@ -89,6 +89,7 @@ export default function NewsLayout({ blog }) {
             {/* //change to img to image  */}
             <Image
               src="/adityaBirla.webp"
+              loading="lazy"
               alt="Aditya Birla PL"
               width={1920}
               height={480}

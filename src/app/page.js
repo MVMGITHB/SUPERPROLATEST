@@ -14,7 +14,7 @@ export const metadata = {
 // SERVER SIDE DATA FETCHING (SEO Optimized)
 async function getBlogData() {
   const res = await fetch(`${base_url}/api/blog/getAllBlog`, {
-    cache: "no-store", // ensures latest news 
+   next: { revalidate: 60 },
   });
 
   return res.json();
