@@ -1,55 +1,67 @@
-import Link from "next/link";
-import { base_url } from "../Helper/helper";
-import Image from "next/image";
+"use client";
 
-const SimilarBlogs = ({ blogs }) => {
+import React, { useMemo } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { base_url } from "../Helper/helper";
+
+const SimilarBlogs = React.memo(({ blogs }) => {
+
+  // Efficient Fisher–Yates shuffle
   const getRandomBlogs = (array, count) => {
-    const shuffled = [...array].sort(() => 0.5 - Math.random());
-    return shuffled.slice(0, count);
+    const arr = [...array];
+
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+
+    return arr.slice(0, count);
   };
 
-  const randomBlogs = getRandomBlogs(Array.isArray(blogs) ? blogs : [], 4);
+  // useMemo ensures shuffle runs only when blogs change
+  const randomBlogs = useMemo(() => {
+    if (!Array.isArray(blogs)) return [];
+    return getRandomBlogs(blogs, 4);
+  }, [blogs]);
 
   return (
     <aside className="w-full md:w-1/5 bg-gray-100 p-2 rounded-lg">
       <h2 className="text-lg font-bold mb-4 text-center border-b pb-2">
         Latest Blogs
       </h2>
+
       <div className="space-y-2">
         {randomBlogs.map((property) => (
           <Link
             key={property?.id}
             href={`/${property?.category?.slug}/${property?.slug}`}
-            rel="noopener noreferrer"
-            title="Go to title page"
+            title={property?.title}
             className="block"
           >
-            <div className="bg-[#eeeef5] rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 p-2 flex items-center justify-between gap-4">
+            <div className="bg-[#eeeef5] rounded-lg shadow-sm hover:shadow-md transition duration-300 p-2 flex items-center gap-3">
+              
               <div className="flex-1">
-                <h3 className="text-[12px] font-medium text-blue-800 hover:text-[#4F1C51] transition-colors line-clamp-3">
-                  {property.title}
+                <h3 className="text-xs font-medium text-blue-800 hover:text-[#4F1C51] line-clamp-3 transition-colors">
+                  {property?.title}
                 </h3>
               </div>
-              <div className="w-35 h-26 flex-shrink-0">
-                {/* <img
-                  src={`${base_url}${property.image}`}
-                  alt={property.title}
-                  className="w-full h-full object-cover rounded-md"
-                /> */}
-                <Image
-                  src={`${base_url}${property.image}`}
-                  alt={property.title}
-                  width={160}
-                  height={90}
-                  className="w-full h-full overflow-hidden object-bottom rounded-md md:object-fill md:rounded-sm"
-                />
-              </div>
+
+              <Image
+                src={`${base_url}${property?.image}`}
+                alt={property?.title}
+                width={160}
+                height={90}
+                sizes="160px"
+                loading="lazy"
+                className="rounded-md object-cover"
+              />
             </div>
           </Link>
         ))}
       </div>
     </aside>
   );
-};
+});
 
 export default SimilarBlogs;
