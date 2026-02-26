@@ -106,7 +106,7 @@ export default function Footer() {
             </li>
             <li>
               <Link 
-              href="fashion-lifestyle" 
+              href="/fashion-lifestyle" 
               className="hover:text-white"
               rel="noopener noreferrer"
               title="Go to Fashian and lifestyle page"
@@ -115,7 +115,7 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="sports" className="hover:text-white"
+              <Link href="/sports" className="hover:text-white"
               rel="noopener noreferrer"
               title="Go to sports page"
               >

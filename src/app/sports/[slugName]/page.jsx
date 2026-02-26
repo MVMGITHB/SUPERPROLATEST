@@ -1,13 +1,12 @@
-import Article from "@/components/Article/Article"
+import Article from "@/components/Article/Article";
 import { base_url } from "@/components/Helper/helper";
 import axios from "axios";
-
 
 export async function generateMetadata({ params }) {
   const { slugName } = params;
 
   const response = await axios.get(
-    `${base_url}/api/blog/getOneBlogByslug/${slugName}`
+    `${base_url}/api/blog/getOneBlogByslug/${slugName}`,
   );
 
   const post = response.data;
@@ -21,10 +20,9 @@ export async function generateMetadata({ params }) {
   }
 
   const url = `/sports/${slugName}`;
-  const imageUrl =
-    post?.mimage?.startsWith("http")
-      ? post.mimage
-      : `https://supernpro.com${post?.mimage || post?.image}`;
+  const imageUrl = post?.mimage?.startsWith("http")
+    ? post.mimage
+    : `https://supernpro.com${post?.mimage || post?.image}`;
 
   return {
     metadataBase: new URL("https://supernpro.com"),
@@ -43,7 +41,7 @@ export async function generateMetadata({ params }) {
       type: "article",
       images: [
         {
-          url:`${base_url}${post.image}` || imageUrl,
+          url: `${base_url}${post.image}` || imageUrl,
           width: 1200,
           height: 630,
         },
@@ -59,18 +57,15 @@ export async function generateMetadata({ params }) {
   };
 }
 
-
-
-
 const page = async ({ params }) => {
-  const { slugName } =await params;
+  const { slugName } = await params;
 
   try {
     const response = await axios.get(
-      `${base_url}/api/blog/getOneBlogByslug/${slugName}`
+      `${base_url}/api/blog/getOneBlogByslug/${slugName}`,
     );
     const data1 = response.data;
-   
+
     return (
       <div>
         <Article data={data1} />
