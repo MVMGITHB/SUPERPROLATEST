@@ -1,6 +1,7 @@
 import AuthorPage from "@/components/authorSection/authorProfile";
 import { base_url } from "@/components/Helper/helper";
 
+import { notFound } from "next/navigation";
 
  
 
@@ -25,6 +26,9 @@ export async function generateMetadata({ params }) {
     }
  
     const data = await res.json();
+
+    
+
     const author = data[0];
  
     if (!author) {

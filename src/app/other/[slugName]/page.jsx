@@ -1,15 +1,21 @@
 import Article from "@/components/Article/Article";
 import { base_url } from "@/components/Helper/helper";
 import axios from "axios";
+import { notFound } from "next/navigation";
 
 export async function generateMetadata({ params }) {
   const { slugName } = await params;
 
   try {
     const response = await axios.get(
-      `${base_url}/api/blog/getOneBlogByslug/${slugName}`
+      `${base_url}/api/blog/getOneBlogByslug/${slugName}`,
     );
     const post = response.data;
+
+    if (!post) {
+      notFound(); // ✅ this is important
+    }
+
     if (!post) {
       return {
         title: "Post not found",
@@ -30,10 +36,10 @@ export async function generateMetadata({ params }) {
       },
     };
   } catch (error) {
-    return {
-      title: "Error loading post",
-      description: "An error occurred while fetching post data.",
-    };
+    if (error.response?.status === 404) {
+      notFound(); // ✅ handle axios 404
+    }
+    throw error;
   }
 }
 const page = async ({ params }) => {
@@ -41,9 +47,13 @@ const page = async ({ params }) => {
 
   try {
     const response = await axios.get(
-      `${base_url}/api/blog/getOneBlogByslug/${slugName}`
+      `${base_url}/api/blog/getOneBlogByslug/${slugName}`,
     );
     const data1 = response.data;
+    
+    if (!data1) {
+      notFound(); // ✅ show 404 page
+    }
 
     return (
       <div>
