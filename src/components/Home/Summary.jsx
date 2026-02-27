@@ -14,6 +14,13 @@ const Summary = ({ blog }) => {
     setVisibleCount((prevCount) => prevCount + 4);
   };
 
+  const getRandomBlogs = (array, count) => {
+    const shuffled = [...array].sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, count);
+  };
+
+  const randomBlogs = Array.isArray(blog) ? getRandomBlogs(blog, 10) : [];
+
   return (
     <div className="mx-auto flex flex-col md:flex-row gap-6">
       <aside className="w-full md:w-1/5">
@@ -80,19 +87,26 @@ const Summary = ({ blog }) => {
         )}
       </main>
 
-      <aside className="w-full md:w-1/5">
+      <aside className="w-full md:w-1/5 px-2">
         <div className="sticky top-4 bg-gray-100 p-4 rounded-lg shadow-md">
-          <h2 className="text-lg font-bold mb-4">Top Offers</h2>
-          <ul className="space-y-3">
-            <li className="border-b pb-2">
-              Breaking: Market hits all-time high
-            </li>
-            <li className="border-b pb-2">Politics: New policies announced</li>
-            <li className="border-b pb-2">
-              Sports: Championship finals highlights
-            </li>
-            <li className="border-b pb-2">Tech: New smartphone released</li>
-          </ul>
+          <h2 className="text-lg font-bold mb-4 text-gray-700">
+            Trending News
+          </h2>
+
+          <div className="h-[350px] overflow-hidden relative">
+            <ul className="animate-scroll space-y-3">
+              {[...randomBlogs, ...randomBlogs].map((item, index) => (
+                <li key={index} className="border-b pb-2 last:border-none">
+                  <Link
+                    href={`/${item?.category?.slug}/${item?.slug}`}
+                    className="text-sm font-medium text-gray-800 hover:text-indigo-600 transition-colors duration-300"
+                  >
+                    {item?.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </aside>
     </div>

@@ -97,3 +97,18 @@ body {
   top:40% !important;
   border-radius: 50% !important;
 }
+
+
+@keyframes scrollVertical {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scrollVertical 25s linear infinite;
+}
+
