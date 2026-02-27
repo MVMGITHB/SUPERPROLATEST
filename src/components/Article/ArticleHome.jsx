@@ -9,12 +9,15 @@ import Link from "next/link";
 import axios from "axios";
 
 import Image from "next/image";
+import SimilarBlogs from "../Home/SimilarBlogs";
+import SimilarBlogBlogPage from "../Home/SimilarBlogBlogPage";
 
 export const ArticleHome = ({ data }) => {
   const pathname = usePathname();
   // console.log("pathname",data)
   const [showFull, setShowFull] = useState(false);
 
+  const [blogs, setBlogs] = useState([]);
   if (!data?.content) return null;
 
   // Split HTML content by first </p>
@@ -125,7 +128,8 @@ export const ArticleHome = ({ data }) => {
       .get(`${base_url}/api/blog/getAllBlog`)
       .then((res) => {
         const data = res.data;
-        //console.log("conclusion---", data)
+        console.log("conclusion---", data);
+        setBlogs(data);
       })
       .catch((err) => console.error(err));
   }, []);
@@ -142,6 +146,7 @@ export const ArticleHome = ({ data }) => {
       />
       <div className=" mx-auto p-4 flex flex-col  md:flex-row gap-6">
         {/* asidbar comment */}
+
         <div className=" w-full md:w-1/5 order-2 md:order-1">
           <SideBar pathname={pathname} data={data} />
         </div>
@@ -152,7 +157,7 @@ export const ArticleHome = ({ data }) => {
           </h1>
           <div className="flex  justify-center  gap-4 pb-4">
             <div className="flex gap-2 md:flex-row justify-center">
-              <h3 className="text-lg text-gray-700">
+              <h3 className="text-[12px] md:text-lg  text-gray-700">
                 Author:
                 <strong>
                   <Link
@@ -171,17 +176,17 @@ export const ArticleHome = ({ data }) => {
                   {new Date(data?.author?.createdAt).toLocaleDateString()}
                 </strong>
               </h3> */}
-              <h3 className="text-lg text-gray-600">
+              <h3 className=" text-[12px] md:text-lg text-gray-600">
                 Updated At:
                 <strong>
                   {/* {new Date(data?.author?.updatedAt).toLocaleDateString()} */}
-                    <time dateTime={data?.createdAt}>
-                {new Intl.DateTimeFormat("en-GB", {
-                  day: "2-digit",
-                  month: "short",
-                  year: "numeric",
-                }).format(new Date(data?.createdAt))}
-              </time>
+                  <time dateTime={data?.createdAt}>
+                    {new Intl.DateTimeFormat("en-GB", {
+                      day: "2-digit",
+                      month: "short",
+                      year: "numeric",
+                    }).format(new Date(data?.createdAt))}
+                  </time>
                 </strong>
               </h3>
             </div>
@@ -346,11 +351,17 @@ export const ArticleHome = ({ data }) => {
           )}
         </div> */}
         </div>
+        <div className=" w-full md:w-1/5  order-3 md:order-3 ">
+          <div className=" w-full md:w-full ">
+            <SimilarBlogBlogPage blogs={blogs} />
+          </div>
+
+          <div className=" w-full md:w-full  ">
+            <RightSideBar pathname={pathname} data={data} />
+          </div>
+        </div>
 
         {/* aside bar comment */}
-        <div className=" w-full md:w-1/5  order-3 md:order-3 ">
-          <RightSideBar pathname={pathname} data={data} />
-        </div>
       </div>
       <script
         type="application/ld+json"

@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { base_url } from "../Helper/helper";
 
-const SimilarBlogs = React.memo(({ blogs }) => {
+const SimilarBlogBlogPage = React.memo(({ blogs }) => {
   // Efficient Fisher–Yates shuffle
   const getRandomBlogs = (array, count) => {
     const arr = [...array];
@@ -25,7 +25,7 @@ const SimilarBlogs = React.memo(({ blogs }) => {
   }, [blogs]);
 
   return (
-    <aside className="w-full md:w-1/5 bg-gray-100 p-2 rounded-lg">
+    <aside className="w-full md:w-full bg-gray-100 p-2 rounded-lg">
       <h2 className="text-lg font-bold mb-4 text-center border-b pb-2">
         Latest Blogs
       </h2>
@@ -48,7 +48,7 @@ const SimilarBlogs = React.memo(({ blogs }) => {
               <Image
                 src={`${base_url}${property?.image}`}
                 alt={property?.title}
-                width={160}
+                width={130}
                 height={90}
                 sizes="160px"
                 loading="lazy"
@@ -62,4 +62,4 @@ const SimilarBlogs = React.memo(({ blogs }) => {
   );
 });
 
-export default SimilarBlogs;
+export default SimilarBlogBlogPage;
