@@ -31,7 +31,7 @@ const SimilarBlogBlogPage = React.memo(({ blogs }) => {
       </h2>
 
       <div className="space-y-2">
-        {randomBlogs.map((property) => (
+        {randomBlogs?.map((property) => (
           <Link
             key={property?.id}
             href={`/${property?.category?.slug}/${property?.slug}`}

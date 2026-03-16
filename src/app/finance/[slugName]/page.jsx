@@ -81,7 +81,7 @@ const page = async ({ params }) => {
     const response = await axios.get(
       `${base_url}/api/blog/getOneBlogByslug/${slugName}`
     );
-    const data1 = response.data;
+    const data1 = response?.data;
 
       if (!data1) {
       notFound(); // ✅ show 404 page

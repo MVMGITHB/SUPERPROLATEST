@@ -44,7 +44,7 @@ export const ArticleHome = ({ data }) => {
   }
 
   // Usage
-  const { firstPart, remainingPart } = splitAfterThirdParagraph(data.content);
+  const { firstPart, remainingPart } = splitAfterThirdParagraph(data?.content);
 
   // formaet date
 
@@ -90,10 +90,10 @@ export const ArticleHome = ({ data }) => {
     "@type": "FAQPage",
     mainEntity: data?.faqs?.map((faq) => ({
       "@type": "Question",
-      name: faq.ques,
+      name: faq?.ques,
       acceptedAnswer: {
         "@type": "Answer",
-        text: faq.ans,
+        text: faq?.ans,
       },
     })),
   };
@@ -127,7 +127,7 @@ export const ArticleHome = ({ data }) => {
     axios
       .get(`${base_url}/api/blog/getAllBlog`)
       .then((res) => {
-        const data = res.data;
+        const data = res?.data;
         console.log("conclusion---", data);
         setBlogs(data);
       })
@@ -153,7 +153,7 @@ export const ArticleHome = ({ data }) => {
 
         <div className=" w-full md:w-3/5 mx-auto shadow-md p-4 order-1 md:order-2   overflow-y-auto scrollbar-hide">
           <h1 className="text-3xl text-gray-600  font-bold text-center p-1 ">
-            {data.title}
+            {data?.title}
           </h1>
           <div className="flex  justify-center  gap-4 pb-4">
             <div className="flex gap-2 md:flex-row justify-center">
@@ -274,13 +274,13 @@ export const ArticleHome = ({ data }) => {
                       <h2 className="text-2xl text-center font-bold mb-4">
                         Frequently Asked Questions
                       </h2>
-                      {data.faqs.map((item) => (
+                      {data?.faqs?.map((item) => (
                         <div key={item._id} className="mb-4">
                           <h3 className="font-semibold text-[20px] text-gray-900">
-                            Q: {item.ques}
+                            Q: {item?.ques}
                           </h3>
                           <p className="text-gray-800 text-[18px]">
-                            A: {item.ans}
+                            A: {item?.ans}
                           </p>
                         </div>
                       ))}
@@ -293,7 +293,7 @@ export const ArticleHome = ({ data }) => {
                         Conclusion:
                       </h2>
                       <p className="text-[20px] text-black">
-                        {data.conclusion}
+                        {data?.conclusion}
                       </p>
                     </div>
                   )}
