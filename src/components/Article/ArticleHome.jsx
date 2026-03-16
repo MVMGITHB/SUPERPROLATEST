@@ -14,19 +14,22 @@ import SimilarBlogBlogPage from "../Home/SimilarBlogBlogPage";
 
 export const ArticleHome = ({ data }) => {
 
-
-  
   const pathname = usePathname();
-  // console.log("pathname",data)
   const [showFull, setShowFull] = useState(false);
-
   const [blogs, setBlogs] = useState([]);
-  if (!data?.content) return null;
 
-  // Split HTML content by first </p>
-  // const splitIndex = data.content.indexOf("</p>") + 4;
-  // const firstPart = data.content.slice(0, splitIndex);
-  // const remainingPart = data.content.slice(splitIndex);
+  /* ---------------- LOADING STATE ---------------- */
+  if (!data || !data?.content) {
+    return (
+      <div className="w-full flex justify-center items-center py-20">
+        <h2 className="text-2xl font-semibold text-gray-600 animate-pulse">
+          Loading Article...
+        </h2>
+      </div>
+    );
+  }
+  /* ------------------------------------------------ */
+
   function splitAfterThirdParagraph(content) {
     let splitIndex = -1;
     let count = 0;
@@ -34,8 +37,8 @@ export const ArticleHome = ({ data }) => {
 
     while (count < 3) {
       const index = content.indexOf("</p>", searchIndex);
-      if (index === -1) break; // less than 3 paragraphs
-      splitIndex = index + 4; // move past </p>
+      if (index === -1) break;
+      splitIndex = index + 4;
       searchIndex = splitIndex;
       count++;
     }
@@ -46,10 +49,7 @@ export const ArticleHome = ({ data }) => {
     return { firstPart, remainingPart };
   }
 
-  // Usage
   const { firstPart, remainingPart } = splitAfterThirdParagraph(data?.content);
-
-  // formaet date
 
   const date = new Date(data?.createdAt);
 
@@ -58,8 +58,6 @@ export const ArticleHome = ({ data }) => {
   const year = String(date.getFullYear()).slice(-2);
 
   const formattedDate = `${day}/${month}/${year}`;
-
-  // schema add for seo
 
   const jsonLd = {
     "@context": "https://schema.org/",
@@ -100,31 +98,20 @@ export const ArticleHome = ({ data }) => {
       },
     })),
   };
-  //  console.log("data for the faqSchema" ,data);
 
   const authorSchema = {
     "@context": "https://schema.org",
-
     "@type": "Person",
-
     name: `${data?.author?.name}`,
-
     url: "https://example.com/about",
-
     image: `${base_url}${data?.author?.image}`,
-
     sameAs: ["https://twitter.com/johndoe", "https://linkedin.com/in/johndoe"],
-
     jobTitle: "Content Writer",
-
     worksFor: {
       "@type": "Organization",
-
       name: "SuperNPro Business Service",
     },
   };
-
-  // console.log("data for the authorSchema" ,authorSchema);
 
   useEffect(() => {
     axios
@@ -147,20 +134,22 @@ export const ArticleHome = ({ data }) => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
       />
-      <div className=" mx-auto p-4 flex flex-col  md:flex-row gap-6">
-        {/* asidbar comment */}
 
-        <div className=" w-full md:w-1/5 order-2 md:order-1">
+      <div className="mx-auto p-4 flex flex-col md:flex-row gap-6">
+
+        <div className="w-full md:w-1/5 order-2 md:order-1">
           <SideBar pathname={pathname} data={data} />
         </div>
 
-        <div className=" w-full md:w-3/5 mx-auto shadow-md p-4 order-1 md:order-2   overflow-y-auto scrollbar-hide">
-          <h1 className="text-3xl text-gray-600  font-bold text-center p-1 ">
+        <div className="w-full md:w-3/5 mx-auto shadow-md p-4 order-1 md:order-2 overflow-y-auto scrollbar-hide">
+          
+          <h1 className="text-3xl text-gray-600 font-bold text-center p-1">
             {data?.title}
           </h1>
-          <div className="flex  justify-center  gap-4 pb-4">
+
+          <div className="flex justify-center gap-4 pb-4">
             <div className="flex gap-2 md:flex-row justify-center">
-              <h3 className="text-[12px] md:text-lg  text-gray-700">
+              <h3 className="text-[12px] md:text-lg text-gray-700">
                 Author:
                 <strong>
                   <Link
@@ -173,16 +162,10 @@ export const ArticleHome = ({ data }) => {
                   </Link>
                 </strong>
               </h3>
-              {/* <h3 className="text-lg text-gray-600">
-                Created At:{" "}
-                <strong>
-                  {new Date(data?.author?.createdAt).toLocaleDateString()}
-                </strong>
-              </h3> */}
-              <h3 className=" text-[12px] md:text-lg text-gray-600">
+
+              <h3 className="text-[12px] md:text-lg text-gray-600">
                 Updated At:
                 <strong>
-                  {/* {new Date(data?.author?.updatedAt).toLocaleDateString()} */}
                   <time dateTime={data?.createdAt}>
                     {new Intl.DateTimeFormat("en-GB", {
                       day: "2-digit",
@@ -193,74 +176,26 @@ export const ArticleHome = ({ data }) => {
                 </strong>
               </h3>
             </div>
-
-            {/* <div>
-             <Image
-            src={`${base_url}${data?.author?.image}`}
-            alt={data?.author?.name || "Author"}
-            width={}
-            height={}
-            className="hidden sm:block rounded-full w-24 h-24 object-cover border-2 border-gray-900 shadow-sm"
-            />
-
-          </div> */}
           </div>
-          <div className="w-full  h-auto md:h-[465px]  relative rounded-md mb-4 overflow-hidden">
-            {/* note : change to img tag to image tag give url in next.config website base url */}
+
+          <div className="w-full h-auto md:h-[465px] relative rounded-md mb-4 overflow-hidden">
             <Image
               src={`${base_url}${data?.image}`}
               alt="news content"
-              // fixed image dimension
               width={850}
               height={450}
               className="object-cover rounded-md"
             />
           </div>
 
-          {/* {
-          data?.Ads[2]?(<>
-                <AnimatedLink
-                    text={data?.Ads[2].text1[0]}
-                    link={data?.Ads[2].link1}
-                    apply={data?.Ads[2].text2}
-                  />
-          
-          </>):(
-            <>
-              {pathname === '/automobile/fastag-annual-pass' ? (
-                  <AnimatedLink
-                    text={"Get 40% Higher  Price For Your Old Car With This Simple Hack"}
-                    link="https://www.cars24.com/sell-marketing/?utm_source=affiliate&utm_medium=email_ob&utm_campaign=mv2341&utm_term=super01"
-                    apply={"Get Price"}
-                  />
-                ) : (
-                  <AnimatedLink text={"Get , Free Gift Voucher, Free Lounge Access, Benefits Of 1,21,799"}  link="https://spectrum.gotrackier.com/click?campaign_id=1201&pub_id=945&source=%7B2%7D"  apply={"Apply Now"}/>
-                )}
-            
-            </>
-          )
-         } */}
-
-          {/* {data ? (
-          <>
-            <div
-              id="artice-main"
-              dangerouslySetInnerHTML={{ __html: data?.content }}
-              className="article"
-            />
-          </>
-        ) : (
-          <></>
-        )} */}
-
-          <div className="article ">
+          <div className="article">
             <div dangerouslySetInnerHTML={{ __html: firstPart }} />
 
             {!showFull && (
               <div className="w-[200px] mx-auto">
                 <button
                   onClick={() => setShowFull(true)}
-                  className="mt-4 mb-4 cursor-pointer text-blue-600  text-2xl text-center font-medium underline"
+                  className="mt-4 mb-4 cursor-pointer text-blue-600 text-2xl text-center font-medium underline"
                 >
                   Read More
                 </button>
@@ -277,6 +212,7 @@ export const ArticleHome = ({ data }) => {
                       <h2 className="text-2xl text-center font-bold mb-4">
                         Frequently Asked Questions
                       </h2>
+
                       {data?.faqs?.map((item) => (
                         <div key={item._id} className="mb-4">
                           <h3 className="font-semibold text-[20px] text-gray-900">
@@ -292,7 +228,7 @@ export const ArticleHome = ({ data }) => {
 
                   {data?.conclusion && (
                     <div className="mb-2 pt-4">
-                      <h2 className="text-2xl font-bold text-center ">
+                      <h2 className="text-2xl font-bold text-center">
                         Conclusion:
                       </h2>
                       <p className="text-[20px] text-black">
@@ -304,68 +240,21 @@ export const ArticleHome = ({ data }) => {
               </>
             )}
           </div>
-
-          {/* {
-          data?.Ads[3]?(<>
-                <AnimatedLink
-                    text={data?.Ads[3].text1[0]}
-                    link={data?.Ads[3].link1}
-                    apply={data?.Ads[3].text2}
-                  />
-          
-          </>):(
-            <>
-              {pathname === '/automobile/fastag-annual-pass' ? (
-                  <AnimatedLink
-                    text={"Get 40% Higher  Price For Your Old Car With This Simple Hack"}
-                    link="https://www.cars24.com/sell-marketing/?utm_source=affiliate&utm_medium=email_ob&utm_campaign=mv2341&utm_term=super01"
-                    apply={"Get Price"}
-                  />
-                ) : (
-                  <AnimatedLink text={"Get , Free Gift Voucher, Free Lounge Access, Benefits Of 1,21,799"}  link="https://spectrum.gotrackier.com/click?campaign_id=1201&pub_id=945&source=%7B2%7D"  apply={"Apply Now"}/>
-                )}
-            
-            </>
-          )
-         } */}
-
-          {/* <div>
-          {data?.faqs?.length > 0 && (
-            <>
-              <h2 className="text-2xl font-bold mb-4">
-                Frequently Asked Questions
-              </h2>
-              {data.faqs.map((item) => (
-                <div key={item._id} className="mb-4">
-                  <h3 className="font-semibold text-[20px] text-gray-900">
-                    Q: {item.ques}
-                  </h3>
-                  <p className="text-gray-800 text-[18px]">A: {item.ans}</p>
-                </div>
-              ))}
-            </>
-          )}
-
-          {data?.conclusion && (
-            <div className="mb-2 pt-4">
-              <h2 className="text-2xl font-bold">Conclusion:</h2>
-              <p className="text-[20px] text-black">{data.conclusion}</p>
-            </div>
-          )}
-        </div> */}
         </div>
-        <div className=" w-full md:w-1/5  order-3 md:order-3 ">
-          <div className=" w-full md:w-full ">
+
+        <div className="w-full md:w-1/5 order-3 md:order-3">
+
+          <div className="w-full md:w-full">
             <SimilarBlogBlogPage blogs={blogs} />
           </div>
 
-          <div className=" w-full md:w-full  ">
+          <div className="w-full md:w-full">
             <RightSideBar pathname={pathname} data={data} />
           </div>
-        </div>
 
-        {/* aside bar comment */}
+        </div>
       </div>
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
