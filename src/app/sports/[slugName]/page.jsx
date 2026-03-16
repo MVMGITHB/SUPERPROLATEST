@@ -4,7 +4,7 @@ import axios from "axios";
 import { notFound } from "next/navigation";
 
 export async function generateMetadata({ params }) {
-  const { slugName } = params;
+  const { slugName } = await params;
 
   try {
     const response = await axios.get(

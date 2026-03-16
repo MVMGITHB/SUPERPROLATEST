@@ -7,10 +7,12 @@ const ContentSecurityPolicy = `
   img-src 'self' data: blob: https:;
   font-src 'self' https: data:;
   connect-src 'self'
-    http://localhost:5926
     https://connect.couponsculture.com
     https://api.shopsmaart.com
-    https://super.jobkityaari.com;
+    https://super.jobkityaari.com
+    https://www.google-analytics.com
+    https://region1.google-analytics.com
+    https://www.googletagmanager.com;
   frame-ancestors 'none';
   object-src 'none';
   base-uri 'self';

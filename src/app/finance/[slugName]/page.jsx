@@ -4,7 +4,9 @@ import axios from "axios";
 import { notFound } from "next/navigation";
 
 export async function generateMetadata({ params }) {
-  const { slugName } = params;
+  const { slugName } = await params;
+
+
 
   try {
     const response = await axios.get(
@@ -74,14 +76,20 @@ export async function generateMetadata({ params }) {
 
 
 const page = async ({ params }) => {
-  const { slugName } =await params;
+  const { slugName } = await params;
+
+  console.log("Received slugName:", slugName);
 
 
   try {
     const response = await axios.get(
       `${base_url}/api/blog/getOneBlogByslug/${slugName}`
     );
+
+    console.log("API response for blog post:", response);
     const data1 = response?.data;
+
+
 
       if (!data1) {
       notFound(); // ✅ show 404 page

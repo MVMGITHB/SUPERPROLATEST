@@ -13,6 +13,9 @@ import SimilarBlogs from "../Home/SimilarBlogs";
 import SimilarBlogBlogPage from "../Home/SimilarBlogBlogPage";
 
 export const ArticleHome = ({ data }) => {
+
+
+  
   const pathname = usePathname();
   // console.log("pathname",data)
   const [showFull, setShowFull] = useState(false);
