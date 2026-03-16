@@ -83,9 +83,9 @@ const Login = () => {
         </div>
 
         <div className="md:w-1/2 p-6 md:p-8 bg-white">
-          <h2 className="text-2xl font-semibold mb-5 text-gray-700">
+          <h1 className="text-2xl font-semibold mb-5 text-gray-700">
             Welcome Back!
-          </h2>
+          </h1>
 
           {err && (
             <div className="text-red-600 bg-red-100 p-2 rounded mb-4 text-sm">
