@@ -8,11 +8,16 @@ import Image from "next/image";
 
 export const BlogHome = ({ url }) => {
   const [cards, setCards] = useState();
+
+  console.log("BlogHome component received url prop:", url);
   const fetchdata = async () => {
     try {
       const data = await axios.get(
         `${base_url}/api/blog/getOneBlogCategoryslug/${url}`
       );
+
+
+      console.log("Data " , data)
       setCards(data.data);
     } catch (error) { 
       // console.log(error);

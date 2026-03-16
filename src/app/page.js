@@ -17,11 +17,15 @@ async function getBlogData() {
    next: { revalidate: 60 },
   });
 
+  // console.log("Fetching blog data from API..." , res.json());
+
   return res.json();
 }
 
 export default async function Page() {
   const blog = await getBlogData(); // Fetch on server
+
+  console.log("Blog data received in Page component:", blog);
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -109,6 +113,8 @@ export default async function Page() {
           __html: JSON.stringify(corporationSchema),
         }}
       />
+
+
 
       {/* Pass server-fetched blog data */}
       <Home blog={blog} />

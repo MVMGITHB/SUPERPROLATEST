@@ -205,7 +205,7 @@ export const ArticleHome = ({ data }) => {
           <div className="w-full  h-auto md:h-[465px]  relative rounded-md mb-4 overflow-hidden">
             {/* note : change to img tag to image tag give url in next.config website base url */}
             <Image
-              src={`${base_url}${data.image}`}
+              src={`${base_url}${data?.image}`}
               alt="news content"
               // fixed image dimension
               width={850}
