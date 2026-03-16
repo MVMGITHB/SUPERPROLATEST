@@ -7,7 +7,6 @@ const ContentSecurityPolicy = `
   img-src 'self' data: blob: https:;
   font-src 'self' https: data:;
   connect-src 'self'
-    http://localhost:5926
     https://connect.couponsculture.com
     https://api.shopsmaart.com
     https://super.jobkityaari.com
