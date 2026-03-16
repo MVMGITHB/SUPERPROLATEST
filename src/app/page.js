@@ -25,7 +25,7 @@ async function getBlogData() {
 export default async function Page() {
   const blog = await getBlogData(); // Fetch on server
 
-  console.log("Blog data received in Page component:", blog);
+  // console.log("Blog data received in Page component:", blog);
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
