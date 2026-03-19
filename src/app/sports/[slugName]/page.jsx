@@ -1,20 +1,34 @@
 import Article from "@/components/Article/Article";
 import { base_url } from "@/components/Helper/helper";
-import axios from "axios";
 import { notFound } from "next/navigation";
 
-export async function generateMetadata({ params }) {
-  const { slugName } = await params;
-
+// ✅ Common API function
+async function getPost(slugName) {
   try {
-    const response = await axios.get(
-    `${base_url}/api/blog/getOneBlogByslug/${slugName}`,
-  );
+    const res = await fetch(
+      `${base_url}/api/blog/getOneBlogByslug/${slugName}`,
+      {
+        cache: "no-store", // or use revalidate
+      }
+    );
 
-  const post = response.data;
-  if (!post) {
-      notFound(); // ✅ this is important
+    if (!res.ok) {
+      if (res.status === 404) return null;
+      throw new Error("Failed to fetch post");
     }
+
+    return await res.json();
+  } catch (error) {
+    console.error("Fetch Error:", error);
+    return null;
+  }
+}
+
+// ✅ Metadata
+export async function generateMetadata({ params }) {
+  const { slugName } = params;
+
+  const post = await getPost(slugName);
 
   if (!post) {
     return {
@@ -25,6 +39,7 @@ export async function generateMetadata({ params }) {
   }
 
   const url = `/sports/${slugName}`;
+
   const imageUrl = post?.mimage?.startsWith("http")
     ? post.mimage
     : `https://supernpro.com${post?.mimage || post?.image}`;
@@ -32,21 +47,21 @@ export async function generateMetadata({ params }) {
   return {
     metadataBase: new URL("https://supernpro.com"),
 
-    title: post.mtitle,
-    description: post.mdesc,
+    title: post?.mtitle || "Blog",
+    description: post?.mdesc || "Read full article",
 
     alternates: {
       canonical: url,
     },
 
     openGraph: {
-      title: post.mtitle,
-      description: post.mdesc,
-      url: url,
+      title: post?.mtitle,
+      description: post?.mdesc,
+      url,
       type: "article",
       images: [
         {
-          url: `${base_url}${post.image}` || imageUrl,
+          url: imageUrl, // ✅ fixed (no broken fallback)
           width: 1200,
           height: 630,
         },
@@ -55,43 +70,28 @@ export async function generateMetadata({ params }) {
 
     twitter: {
       card: "summary_large_image",
-      title: post.mtitle,
-      description: post.mdesc,
+      title: post?.mtitle,
+      description: post?.mdesc,
       images: [imageUrl],
     },
   };
-  } catch (error) {
-    if (error.response?.status === 404) {
-      notFound(); // ✅ handle axios 404
-    }
-
-    throw error; 
-    
-  }
 }
 
+// ✅ Page
 const page = async ({ params }) => {
-  const { slugName } = await params;
+  const { slugName } = params; // ✅ FIXED
 
-  try {
-    const response = await axios.get(
-      `${base_url}/api/blog/getOneBlogByslug/${slugName}`,
-    );
-    const data1 = response.data;
+  const data = await getPost(slugName);
 
-    if (!data1) {
-      notFound(); // ✅ show 404 page
-    }
-    
-    return (
-      <div>
-        <Article data={data1} />
-      </div>
-    );
-  } catch (error) {
-    console.error("Error fetching article:", error);
-    return <div>Failed to load article.</div>;
+  if (!data) {
+    notFound();
   }
+
+  return (
+    <div>
+      <Article data={data} />
+    </div>
+  );
 };
 
 export default page;

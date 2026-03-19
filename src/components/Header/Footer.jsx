@@ -20,12 +20,12 @@ export default function Footer() {
               className="h-20 md:h-24 object-contain"
             />
           </Link>
-          <a
+          {/* <a
             href="mailto:contact@supernpro.com"
             className="text-sm text-gray-400 mt-1 hover:underline"
           >
             contact@supernpro.com
-          </a>
+          </a> */}
         </div>
 
         <div>
