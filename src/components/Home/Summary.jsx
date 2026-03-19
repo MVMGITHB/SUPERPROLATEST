@@ -93,7 +93,9 @@ const Summary = ({ blog }) => {
             Trending News
           </h2>
 
-          <div className="h-[350px] overflow-hidden relative">
+          {/* Scroll Container */}
+          <div className="h-[350px] overflow-y-auto relative scrollbar-thin">
+            {/* Auto + Manual Scroll List */}
             <ul className="animate-scroll space-y-3">
               {[...randomBlogs, ...randomBlogs].map((item, index) => (
                 <li key={index} className="border-b pb-2 last:border-none">

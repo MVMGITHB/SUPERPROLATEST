@@ -1,24 +1,21 @@
 /** @type {import('next').NextConfig} */
 
 const ContentSecurityPolicy = `
-  default-src 'self';
-  script-src 'self' 'unsafe-inline' 'unsafe-eval' https:;
-  style-src 'self' 'unsafe-inline' https:;
-  img-src 'self' data: blob: https:;
-  font-src 'self' https: data:;
-  connect-src 'self'
-    http://localhost:5926
-    https://connect.couponsculture.com
-    https://api.shopsmaart.com
-    https://super.jobkityaari.com
-    https://www.google-analytics.com
-    https://region1.google-analytics.com
-    https://www.googletagmanager.com;
-  frame-ancestors 'none';
-  object-src 'none';
-  base-uri 'self';
-  form-action 'self';
-`.replace(/\n/g, "");
+default-src 'self';
+script-src 'self' 'unsafe-inline' 'unsafe-eval' https:;
+style-src 'self' 'unsafe-inline' https:;
+img-src 'self' data: blob: https:;
+font-src 'self' https: data:;
+connect-src 'self' http://localhost:5926 https://connect.couponsculture.com https://api.shopsmaart.com https://super.jobkityaari.com https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com https://www.google.com;
+frame-src https://www.google.com https://maps.google.com https://www.google.com/maps https://www.gstatic.com;
+frame-ancestors 'self';
+object-src 'none';
+base-uri 'self';
+form-action 'self';
+`
+.replace(/\n/g, "")
+.replace(/\s{2,}/g, " ")
+.trim();
 
 const securityHeaders = [
   {
@@ -31,7 +28,7 @@ const securityHeaders = [
   },
   {
     key: "X-Frame-Options",
-    value: "DENY",
+    value: "SAMEORIGIN",
   },
   {
     key: "X-Content-Type-Options",
@@ -73,6 +70,11 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "connect.couponsculture.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "www.google.com",
         pathname: "/**",
       },
       {

@@ -5,6 +5,7 @@ import Footer from "@/components/Header/Footer";
 import Navbar from "@/components/Header/Navbar";
 import { AuthProvider } from "@/components/context/auth";
 import MainPopup from "@/components/Home/MainPopup";
+import { Toaster } from "react-hot-toast";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -61,6 +62,8 @@ export default function RootLayout({ children }) {
         <AuthProvider>
           <Navbar />
           {children}
+
+            <Toaster position="top-right" />
           <MainPopup />
           <Footer />
         </AuthProvider>

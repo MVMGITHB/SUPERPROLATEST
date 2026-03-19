@@ -9,7 +9,7 @@ async function getPost(slugName) {
       `${base_url}/api/blog/getOneBlogByslug/${slugName}`,
       {
         cache: "no-store", // or use revalidate
-      }
+      },
     );
 
     if (!res.ok) {

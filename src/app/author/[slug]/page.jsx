@@ -30,7 +30,6 @@ export async function generateMetadata({ params }) {
 
     // console.log("Author data fetched for metadata:", author);
 
-
     if (!author) {
       return {
         title: "Author Not Found | Top5Shots",
@@ -51,12 +50,11 @@ export async function generateMetadata({ params }) {
         : `${baseUrl}${author.image}`
       : `${baseUrl}/images/default-user.png`;
 
-      const plainDescription = bio
-  .replace(/<[^>]*>/g, "")   // remove HTML tags
-  .replace(/&nbsp;/g, " ")   // remove &nbsp;
-  .trim()
-  .slice(0, 160);
-
+    const plainDescription = bio
+      .replace(/<[^>]*>/g, "") // remove HTML tags
+      .replace(/&nbsp;/g, " ") // remove &nbsp;
+      .trim()
+      .slice(0, 160);
 
     return {
       title: `${author.name} | Author at SuperNpro `,

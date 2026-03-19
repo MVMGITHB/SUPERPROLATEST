@@ -90,15 +90,21 @@ body {
   align-items: center;
 } */
 
-.carousel.carousel-slider .control-arrow{
+/* ================= CAROUSEL ARROWS ================= */
+.carousel.carousel-slider .control-arrow {
   background-color: rgba(255, 0, 43, 0.815) !important;
   height: 50px !important;
   width: 50px !important;
-  top:40% !important;
+  top: 40% !important;
   border-radius: 50% !important;
+  opacity: 1 !important;
 }
 
+.carousel.carousel-slider .control-arrow:hover {
+  background-color: rgba(255, 0, 43, 1) !important;
+}
 
+/* ================= SCROLL ANIMATION ================= */
 @keyframes scrollVertical {
   0% {
     transform: translateY(0%);
@@ -112,3 +118,18 @@ body {
   animation: scrollVertical 25s linear infinite;
 }
 
+/* Pause animation when user interacts */
+.animate-scroll:hover,
+.animate-scroll:active {
+  animation-play-state: paused;
+}
+
+/* ================= SCROLLBAR (OPTIONAL) ================= */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: #9ca3af;
+  border-radius: 10px;
+}
