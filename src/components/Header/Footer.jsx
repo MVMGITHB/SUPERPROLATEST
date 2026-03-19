@@ -57,6 +57,14 @@ export default function Footer() {
               </Link>
             </li>
             <li>
+              <Link href="/contact-us" className="hover:text-white"
+              rel="noopener noreferrer"
+              title="Go to contact-us page"
+              >
+                Contact Us
+              </Link>
+            </li>
+            <li>
               <Link href="/privacypolicy" className="hover:text-white"
               rel="noopener noreferrer"
               title="go to Privacy and policy page"
