@@ -86,5 +86,5 @@ export async function generateMetadata({ params }) {
 }
 
 export default function Page({ params }) {
-  return <AuthorPage slug={params.slug} />;
+  return <AuthorPage slug={params?.slug} />;
 }
