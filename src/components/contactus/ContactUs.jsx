@@ -69,7 +69,7 @@ export default function ContactUs() {
         <FaEnvelope className="text-indigo-600" />
         <span className="font-medium">Email:</span>
         <a
-          href="mailto:support@supernpro.com"
+          href="mailto:contact@supernpro.com"
           className="text-indigo-600 hover:underline"
         >
           contact@supernpro.com
