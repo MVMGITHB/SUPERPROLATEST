@@ -5,69 +5,354 @@
   xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                       http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   
-  <url>
-    <loc>https://supernpro.com/</loc>
-    <lastmod>2025-10-07T07:19:21.504Z</lastmod>
-    <priority>1.00</priority>
-  </url>
-  <url>
-    <loc>https://supernpro.com/politics</loc>
-    <lastmod>2025-10-07T07:19:21.504Z</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://supernpro.com/finance</loc>
-    <lastmod>2025-10-07T07:19:21.504Z</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://supernpro.com/automobile</loc>
-    <lastmod>2025-10-07T07:19:21.504Z</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://supernpro.com/entertainment</loc>
-    <lastmod>2025-10-07T07:19:21.504Z</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://supernpro.com/real-estate</loc>
-    <lastmod>2025-10-07T07:19:21.504Z</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://supernpro.com/fashion-lifestyle</loc>
-    <lastmod>2025-10-07T07:19:21.504Z</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://supernpro.com/technology</loc>
-    <lastmod>2025-10-07T07:19:21.504Z</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://supernpro.com/sports</loc>
-    <lastmod>2025-10-07T07:19:21.504Z</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://supernpro.com/about-us</loc>
-    <lastmod>2025-10-07T07:19:21.504Z</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://supernpro.com/privacypolicy</loc>
-    <lastmod>2025-10-07T07:19:21.504Z</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://supernpro.com/useservices</loc>
-    <lastmod>2025-10-07T07:19:21.504Z</lastmod>
-    <priority>0.80</priority>
-  </url>
+                <url>
+                  <loc>https://supernpro.com/</loc>
+                  <lastmod>2026-03-24T07:58:45.242Z</lastmod>
+                  <priority>1.00</priority>
+                </url>
+                <url>
+                  <loc>https://supernpro.com/politics</loc>
+                  <lastmod>2026-03-24T07:58:45.243Z</lastmod>
+                  <priority>0.80</priority>
+                </url>
+                <url>
+                  <loc>https://supernpro.com/finance</loc>
+                  <lastmod>2026-03-24T07:58:45.243Z</lastmod>
+                  <priority>0.80</priority>
+                </url>
+                <url>
+                  <loc>https://supernpro.com/automobile</loc>
+                  <lastmod>2026-03-24T07:58:45.243Z</lastmod>
+                  <priority>0.80</priority>
+                </url>
+                <url>
+                  <loc>https://supernpro.com/entertainment</loc>
+                  <lastmod>2026-03-24T07:58:45.243Z</lastmod>
+                  <priority>0.80</priority>
+                </url>
+                <url>
+                  <loc>https://supernpro.com/real-estate</loc>
+                  <lastmod>2026-03-24T07:58:45.243Z</lastmod>
+                  <priority>0.80</priority>
+                </url>
+                <url>
+                  <loc>https://supernpro.com/fashion-lifestyle</loc>
+                  <lastmod>2026-03-24T07:58:45.243Z</lastmod>
+                  <priority>0.80</priority>
+                </url>
+                <url>
+                  <loc>https://supernpro.com/technology</loc>
+                  <lastmod>2026-03-24T07:58:45.243Z</lastmod>
+                  <priority>0.80</priority>
+                </url>
+                <url>
+                  <loc>https://supernpro.com/sports</loc>
+                  <lastmod>2026-03-24T07:58:45.243Z</lastmod>
+                  <priority>0.80</priority>
+                </url>
+                <url>
+                  <loc>https://supernpro.com/about-us</loc>
+                  <lastmod>2026-03-24T07:58:45.243Z</lastmod>
+                  <priority>0.80</priority>
+                </url>
+                <url>
+                  <loc>https://supernpro.com/privacypolicy</loc>
+                  <lastmod>2026-03-24T07:58:45.243Z</lastmod>
+                  <priority>0.80</priority>
+                </url>
+                <url>
+                  <loc>https://supernpro.com/use-services</loc>
+                  <lastmod>2026-03-24T07:58:45.243Z</lastmod>
+                  <priority>0.80</priority>
+                </url>
   
   <url>
-    <loc>https://supernpro.com/finance/aadhaar-card-update-fee-hike</loc>
+    <loc>https://supernpro.com/technology/indian-railways-new-booking-system</loc>
+    <lastmod>2026-03-19T11:30:15.244Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/sports/usa-india-2026-t20-wc-opener</loc>
+    <lastmod>2026-02-27T07:34:37.438Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/finance/us-india-trade-deal</loc>
+    <lastmod>2026-02-27T07:35:01.246Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/entertainment/arijit-singh-announces-exit-from-playback-singing</loc>
+    <lastmod>2026-02-27T07:35:07.596Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/technology/cloudflare-zero-day-host-access-control-issue</loc>
+    <lastmod>2026-02-27T07:35:49.825Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/automobile/vande-bharat-sleeper-ticket-booking-rules</loc>
+    <lastmod>2026-01-14T05:19:17.938Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/finance/indian-rupee9-lakh-crore-wiped-out-in-days</loc>
+    <lastmod>2026-02-27T07:35:55.478Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/technology/no-more-permanent-gmail</loc>
+    <lastmod>2026-02-27T07:36:01.028Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/technology/8-features-that-can-secure-account</loc>
+    <lastmod>2026-02-27T07:36:07.101Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/entertainment/amir-khan-reacts-to-sunil-grover-mimicry</loc>
+    <lastmod>2026-02-27T07:36:14.600Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/technology/taj-mahal-moment-wins-heart-online</loc>
+    <lastmod>2026-02-27T07:36:19.113Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/technology/mukesh-ambani-unveils-reliance-ai-manifesto</loc>
+    <lastmod>2025-12-31T05:12:46.595Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/technology/whatsapp-new-year-2026-update</loc>
+    <lastmod>2025-12-30T05:22:45.034Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/finance/zepto-plans-a-11000-crore-ipo</loc>
+    <lastmod>2025-12-26T06:15:05.094Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/fashion-lifestyle/biryani-tops-swiggy-order-in-2025</loc>
+    <lastmod>2025-12-24T05:38:45.520Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/technology/whatsapp-users-warning</loc>
+    <lastmod>2025-12-23T13:17:00.403Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/politics/indigo-pilot-shortage-crisis</loc>
+    <lastmod>2025-12-08T07:02:01.935Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/general/epfo-rolls-out-3-rule</loc>
+    <lastmod>2025-12-03T07:40:48.123Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/general/check-your-pf-balance-at-home</loc>
+    <lastmod>2025-12-02T10:22:27.461Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/general/employee-pension-scheme</loc>
+    <lastmod>2025-12-01T08:26:55.685Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/general/sbi-to-discontinue-mcash</loc>
+    <lastmod>2025-11-28T10:22:54.143Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/entertainment/panchayat-season-4-release-updates</loc>
+    <lastmod>2025-11-27T08:32:42.418Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/entertainment/family-man-season-5</loc>
+    <lastmod>2025-11-26T11:24:56.738Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/technology/volcanic-ash-over-india</loc>
+    <lastmod>2025-11-25T08:33:28.983Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/technology/how-online-orders-are-processed-and-delivered</loc>
+    <lastmod>2025-11-21T08:19:57.151Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/technology/fastag-kyc-update</loc>
+    <lastmod>2025-11-20T08:44:29.398Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/technology/up-govt-introduces-whatsapp-chatbot</loc>
+    <lastmod>2025-11-19T11:00:27.110Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/general/post-office-time-deposit</loc>
+    <lastmod>2025-11-18T11:02:39.692Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/general/lic-launches-jan-suraksha-and-bima-lakshmi-insurance-plan</loc>
+    <lastmod>2025-11-17T08:41:51.209Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/technology/bihar-elections-result-2025-live</loc>
+    <lastmod>2025-11-14T11:41:52.730Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/technology/whatsapp-roll-out-smarter-chat-cleaup-tools</loc>
+    <lastmod>2025-11-13T12:09:58.837Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/technology/india's-data-centre-boom-faces-crisis</loc>
+    <lastmod>2025-11-11T12:41:52.841Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/technology/income-tax-refund-correction</loc>
+    <lastmod>2025-11-10T11:40:34.461Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/technology/no-more-hidden-charges-on-zepto</loc>
+    <lastmod>2025-11-07T06:45:54.816Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/technology/how-to-link-pan-card-with-aadharcard</loc>
+    <lastmod>2025-11-05T07:33:55.308Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/technology/lava-agni-4-launch</loc>
+    <lastmod>2025-11-04T11:03:52.628Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/technology/jee-main-2026</loc>
+    <lastmod>2025-11-03T10:54:51.977Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/technology/the-truth-about-ai-generated-content</loc>
+    <lastmod>2025-11-03T10:05:09.428Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/technology/trai-approves-official-caller-id</loc>
+    <lastmod>2025-11-03T09:46:23.375Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/sports/women's-world-cup-2025</loc>
+    <lastmod>2025-10-30T07:40:26.672Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/technology/moto-g67-power-india-launch</loc>
+    <lastmod>2025-10-30T06:02:20.608Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/technology/openai-expands-india-first-strategy</loc>
+    <lastmod>2025-10-29T07:20:04.641Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/technology/reliance-jio-targets-sme</loc>
+    <lastmod>2025-10-27T12:02:18.313Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/general/rupee-rises-upto-13-paise</loc>
+    <lastmod>2025-10-27T07:24:22.935Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/technology/details-of-the-zoho-pay-upi-app-launch</loc>
+    <lastmod>2025-10-27T05:58:01.868Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/technology/october-2025-android-update-google-features</loc>
+    <lastmod>2025-10-22T07:48:19.519Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/technology/windows-10-end-of-life</loc>
+    <lastmod>2025-10-16T10:28:50.254Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/technology/details-of-the-jiohome-60-day-free-deal</loc>
+    <lastmod>2025-10-16T08:46:26.733Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/technology/zoho-mail-gmail-key-differences</loc>
+    <lastmod>2025-10-15T06:26:00.757Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/politics/delhi-gurugram-expressway</loc>
+    <lastmod>2025-10-14T11:34:39.388Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/politics/govt-migrates-12-lakh-emails-to-zoho-platform</loc>
+    <lastmod>2025-10-13T07:31:47.854Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/technology/jio-bharat-phone-for-rs799</loc>
+    <lastmod>2025-10-10T09:22:45.421Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/politics/mehram-nagr-eviction-dispute</loc>
+    <lastmod>2025-10-10T09:23:12.451Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/general/hyundai-suv-recall</loc>
+    <lastmod>2025-10-10T09:23:42.078Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/technology/sabarmati-gurgaon-vande-bharat-express</loc>
+    <lastmod>2025-10-08T12:46:38.979Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/fashion-lifestyle/8-drinks-to-cut-cancer-risk</loc>
+    <lastmod>2025-10-08T12:36:06.977Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/technology/windows-11-specs</loc>
+    <lastmod>2025-10-07T11:48:32.812Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/general/aadhaar-card-update-fee-hike</loc>
     <lastmod>2025-10-06T12:03:26.611Z</lastmod>
     <priority>0.70</priority>
   </url>
@@ -97,12 +382,12 @@
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/repo-rate-freeze-august-2025</loc>
+    <loc>https://supernpro.com/general/repo-rate-freeze-august-2025</loc>
     <lastmod>2025-09-30T11:22:39.369Z</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/amazon's-google-ads-exit</loc>
+    <loc>https://supernpro.com/general/amazon's-google-ads-exit</loc>
     <lastmod>2025-09-30T11:21:57.488Z</lastmod>
     <priority>0.70</priority>
   </url>
@@ -112,7 +397,7 @@
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/policybazaar-fined-indian-rupee5-crore-by-irdai</loc>
+    <loc>https://supernpro.com/general/policybazaar-fined-indian-rupee5-crore-by-irdai</loc>
     <lastmod>2025-09-30T11:23:05.747Z</lastmod>
     <priority>0.70</priority>
   </url>
@@ -132,7 +417,7 @@
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/marketin-funnel-analysis</loc>
+    <loc>https://supernpro.com/general/marketin-funnel-analysis</loc>
     <lastmod>2025-08-01T10:59:34.485Z</lastmod>
     <priority>0.70</priority>
   </url>
@@ -147,7 +432,7 @@
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/how-to-check-your-credit-report</loc>
+    <loc>https://supernpro.com/general/how-to-check-your-credit-report</loc>
     <lastmod>2025-09-30T11:22:29.294Z</lastmod>
     <priority>0.70</priority>
   </url>
@@ -157,12 +442,12 @@
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/public-sector-banks</loc>
+    <loc>https://supernpro.com/general/public-sector-banks</loc>
     <lastmod>2025-09-30T11:27:48.389Z</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/rupee-fell-to-87.44dollar</loc>
+    <loc>https://supernpro.com/general/rupee-fell-to-87.44dollar</loc>
     <lastmod>2025-09-30T11:27:10.283Z</lastmod>
     <priority>0.70</priority>
   </url>
@@ -172,7 +457,7 @@
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/nsdl-ipo</loc>
+    <loc>https://supernpro.com/general/nsdl-ipo</loc>
     <lastmod>2025-09-30T11:26:16.767Z</lastmod>
     <priority>0.70</priority>
   </url>
@@ -182,7 +467,7 @@
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/1-indian-rupees-worth-.43-baht</loc>
+    <loc>https://supernpro.com/general/1-indian-rupees-worth-.43-baht</loc>
     <lastmod>2025-09-30T11:38:21.642Z</lastmod>
     <priority>0.70</priority>
   </url>
@@ -212,7 +497,7 @@
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/itr-filing-deadline</loc>
+    <loc>https://supernpro.com/general/itr-filing-deadline</loc>
     <lastmod>2025-09-30T11:32:19.855Z</lastmod>
     <priority>0.70</priority>
   </url>
@@ -232,7 +517,7 @@
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/noida-gets-tax-free-status</loc>
+    <loc>https://supernpro.com/general/noida-gets-tax-free-status</loc>
     <lastmod>2025-09-30T11:29:45.779Z</lastmod>
     <priority>0.70</priority>
   </url>
@@ -252,12 +537,12 @@
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/cibil-score-2025</loc>
+    <loc>https://supernpro.com/general/cibil-score-2025</loc>
     <lastmod>2025-09-30T11:33:59.472Z</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/uidai-to-launch-aadhar-card</loc>
+    <loc>https://supernpro.com/general/uidai-to-launch-aadhar-card</loc>
     <lastmod>2025-09-30T11:34:51.558Z</lastmod>
     <priority>0.70</priority>
   </url>
@@ -267,7 +552,7 @@
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/itr2-filing</loc>
+    <loc>https://supernpro.com/general/itr2-filing</loc>
     <lastmod>2025-09-30T11:35:05.218Z</lastmod>
     <priority>0.70</priority>
   </url>
@@ -277,17 +562,17 @@
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/uidai-introduces-offline-verification</loc>
+    <loc>https://supernpro.com/general/uidai-introduces-offline-verification</loc>
     <lastmod>2025-09-30T11:33:47.985Z</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/repo-rate-decline-2025</loc>
+    <loc>https://supernpro.com/general/repo-rate-decline-2025</loc>
     <lastmod>2025-09-30T11:35:22.908Z</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/sbi-2500cr-qip-sees-3x</loc>
+    <loc>https://supernpro.com/general/sbi-2500cr-qip-sees-3x</loc>
     <lastmod>2025-09-30T11:27:33.210Z</lastmod>
     <priority>0.70</priority>
   </url>
@@ -302,22 +587,22 @@
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/upi-credit-guideline</loc>
+    <loc>https://supernpro.com/general/upi-credit-guideline</loc>
     <lastmod>2025-09-30T11:29:33.641Z</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/home-loan-rates-fall</loc>
+    <loc>https://supernpro.com/general/home-loan-rates-fall</loc>
     <lastmod>2025-09-30T11:29:00.187Z</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/income-tax-verification-drive</loc>
+    <loc>https://supernpro.com/general/income-tax-verification-drive</loc>
     <lastmod>2025-09-30T11:36:51.139Z</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/jio-complimentary-plan</loc>
+    <loc>https://supernpro.com/general/jio-complimentary-plan</loc>
     <lastmod>2025-09-30T11:36:33.510Z</lastmod>
     <priority>0.70</priority>
   </url>
@@ -327,32 +612,32 @@
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/personal-loans-july-2025</loc>
+    <loc>https://supernpro.com/general/personal-loans-july-2025</loc>
     <lastmod>2025-09-30T11:35:57.442Z</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/credit-card-hidden-charges</loc>
+    <loc>https://supernpro.com/general/credit-card-hidden-charges</loc>
     <lastmod>2025-07-10T17:36:58.800Z</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/lic-launches-insurance-plans</loc>
+    <loc>https://supernpro.com/general/lic-launches-insurance-plans</loc>
     <lastmod>2025-09-30T11:29:56.196Z</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/rising-hidden-fees-make-10-minute-grocery</loc>
+    <loc>https://supernpro.com/general/rising-hidden-fees-make-10-minute-grocery</loc>
     <lastmod>2025-09-30T11:30:08.462Z</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/eps-nps-ppf</loc>
+    <loc>https://supernpro.com/general/eps-nps-ppf</loc>
     <lastmod>2025-09-30T11:30:28.649Z</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/credit-score-updates</loc>
+    <loc>https://supernpro.com/general/credit-score-updates</loc>
     <lastmod>2025-09-30T11:30:42.248Z</lastmod>
     <priority>0.70</priority>
   </url>
@@ -367,7 +652,7 @@
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/top-credit-card-2025</loc>
+    <loc>https://supernpro.com/general/top-credit-card-2025</loc>
     <lastmod>2025-07-07T09:47:00.710Z</lastmod>
     <priority>0.70</priority>
   </url>
@@ -377,12 +662,12 @@
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/lic-update</loc>
+    <loc>https://supernpro.com/general/lic-update</loc>
     <lastmod>2025-07-04T10:37:26.539Z</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/automobile/delhi-fuel-ban</loc>
+    <loc>https://supernpro.com/general/delhi-fuel-ban</loc>
     <lastmod>2025-07-04T12:36:50.885Z</lastmod>
     <priority>0.70</priority>
   </url>
@@ -392,17 +677,17 @@
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/bajaj-finserv-250-million-target</loc>
+    <loc>https://supernpro.com/general/bajaj-finserv-250-million-target</loc>
     <lastmod>2025-09-30T11:32:27.401Z</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/itr-filling-refund-delays</loc>
+    <loc>https://supernpro.com/general/itr-filling-refund-delays</loc>
     <lastmod>2025-09-30T11:32:41.009Z</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/automobile/railways-fare-hike</loc>
+    <loc>https://supernpro.com/general/railways-fare-hike</loc>
     <lastmod>2025-09-30T11:33:00.307Z</lastmod>
     <priority>0.70</priority>
   </url>
@@ -427,7 +712,7 @@
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/itr-filing-mistakes</loc>
+    <loc>https://supernpro.com/general/itr-filing-mistakes</loc>
     <lastmod>2025-06-30T12:18:17.423Z</lastmod>
     <priority>0.70</priority>
   </url>
@@ -462,12 +747,12 @@
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/nach-3.0-launche-in-july</loc>
+    <loc>https://supernpro.com/general/nach-3.0-launche-in-july</loc>
     <lastmod>2025-06-25T10:06:49.551Z</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/dual-network-credit-card</loc>
+    <loc>https://supernpro.com/general/dual-network-credit-card</loc>
     <lastmod>2025-06-24T07:46:43.458Z</lastmod>
     <priority>0.70</priority>
   </url>
@@ -507,7 +792,7 @@
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/sbi-interest-rate</loc>
+    <loc>https://supernpro.com/general/sbi-interest-rate</loc>
     <lastmod>2025-06-20T10:08:40.480Z</lastmod>
     <priority>0.70</priority>
   </url>
@@ -517,7 +802,7 @@
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/paytm-fema-case</loc>
+    <loc>https://supernpro.com/general/paytm-fema-case</loc>
     <lastmod>2025-06-20T10:08:36.897Z</lastmod>
     <priority>0.70</priority>
   </url>
@@ -527,17 +812,17 @@
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/automobile/fastag-annual-pass</loc>
+    <loc>https://supernpro.com/general/fastag-annual-pass</loc>
     <lastmod>2025-06-20T10:08:32.793Z</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/sbi-free-insurance</loc>
+    <loc>https://supernpro.com/general/sbi-free-insurance</loc>
     <lastmod>2025-06-20T10:08:30.735Z</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/new-income-tax-rules</loc>
+    <loc>https://supernpro.com/general/new-income-tax-rules</loc>
     <lastmod>2025-06-20T10:08:28.503Z</lastmod>
     <priority>0.70</priority>
   </url>
@@ -552,7 +837,7 @@
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/epfo-auto-claim</loc>
+    <loc>https://supernpro.com/general/epfo-auto-claim</loc>
     <lastmod>2025-06-20T10:08:20.590Z</lastmod>
     <priority>0.70</priority>
   </url>
@@ -577,7 +862,7 @@
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/epfo3.0-changes</loc>
+    <loc>https://supernpro.com/general/epfo3.0-changes</loc>
     <lastmod>2025-06-20T10:08:10.775Z</lastmod>
     <priority>0.70</priority>
   </url>
@@ -587,7 +872,7 @@
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/automobile/delhi-metro-corridor</loc>
+    <loc>https://supernpro.com/general/delhi-metro-corridor</loc>
     <lastmod>2025-06-20T10:08:07.064Z</lastmod>
     <priority>0.70</priority>
   </url>
@@ -612,12 +897,12 @@
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/epf-3.0-launch</loc>
+    <loc>https://supernpro.com/general/epf-3.0-launch</loc>
     <lastmod>2025-06-20T10:07:56.169Z</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/personal-loan</loc>
+    <loc>https://supernpro.com/general/personal-loan</loc>
     <lastmod>2025-06-20T10:07:54.482Z</lastmod>
     <priority>0.70</priority>
   </url>
@@ -627,7 +912,7 @@
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/best-5-business-loans</loc>
+    <loc>https://supernpro.com/general/best-5-business-loans</loc>
     <lastmod>2025-06-05T05:39:09.354Z</lastmod>
     <priority>0.70</priority>
   </url>
@@ -637,12 +922,12 @@
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/updated-itr-forms</loc>
+    <loc>https://supernpro.com/general/updated-itr-forms</loc>
     <lastmod>2025-06-05T05:55:37.432Z</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/pan-deatails-mandatory-for-property-registration</loc>
+    <loc>https://supernpro.com/general/pan-deatails-mandatory-for-property-registration</loc>
     <lastmod>2025-06-05T06:00:16.877Z</lastmod>
     <priority>0.70</priority>
   </url>
@@ -667,7 +952,7 @@
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/nestle-india-removed-from-bse</loc>
+    <loc>https://supernpro.com/general/nestle-india-removed-from-bse</loc>
     <lastmod>2025-06-03T07:43:39.278Z</lastmod>
     <priority>0.70</priority>
   </url>
@@ -677,18 +962,23 @@
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/jio-blackrock-mutual-funds</loc>
+    <loc>https://supernpro.com/general/jio-blackrock-mutual-funds</loc>
     <lastmod>2025-06-03T11:15:16.144Z</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/new-pension-rules</loc>
+    <loc>https://supernpro.com/general/new-pension-rules</loc>
     <lastmod>2025-06-03T07:47:27.484Z</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://supernpro.com/finance/pay-commission-changes</loc>
+    <loc>https://supernpro.com/general/pay-commission-changes</loc>
     <lastmod>2025-06-18T13:23:52.398Z</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://supernpro.com/fashion-lifestyle/dense-fog-delhi-ncr</loc>
+    <lastmod>2025-01-29T05:45:44.030Z</lastmod>
     <priority>0.70</priority>
   </url>
 </urlset>

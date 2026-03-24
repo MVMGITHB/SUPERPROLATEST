@@ -8,8 +8,12 @@ const BASE_URL = "https://supernpro.com";
 async function generateSitemap() {
   try {
     //put api Base-url data for the fetch data not website base-Url
-    const response = await fetch(`https://connect.couponsculture.com/api/blog/getAllBlog`);
+    const response = await fetch(
+      `http://localhost:5926/api/blog/getAllBlog`,
+    );
     const articles = await response.json();
+
+    console.log(`Fetched ${articles.length} articles from API.`);
 
     const staticUrls = [
       { loc: `${BASE_URL}/`, priority: "1.00" },
@@ -28,12 +32,12 @@ async function generateSitemap() {
 
     const staticXml = staticUrls.map(
       (page) => `
-  <url>
-    <loc>${page.loc}</loc>
-    <lastmod>${new Date().toISOString()}</lastmod>
-    <priority>${page.priority}</priority>
-  </url>`
-    );
+                <url>
+                  <loc>${page.loc}</loc>
+                  <lastmod>${new Date().toISOString()}</lastmod>
+                  <priority>${page.priority}</priority>
+                </url>`,
+               );
 
     const articleXml = articles.map((article) => {
       const category = article.category?.slug || "general";
@@ -61,9 +65,9 @@ async function generateSitemap() {
 </urlset>`;
 
     fs.writeFileSync(path.join("public", "sitemap.xml"), fullSitemap, "utf8");
-    // console.log("✅ Sitemap generated successfully at public/sitemap.xml");
+    console.log("✅ Sitemap generated successfully at public/sitemap.xml");
   } catch (error) {
-    // console.error("❌ Error generating sitemap:", error);
+    console.error("❌ Error generating sitemap:", error);
   }
 }
 
