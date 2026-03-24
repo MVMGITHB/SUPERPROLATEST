@@ -30,6 +30,8 @@ export async function generateMetadata({ params }) {
 
   const post = await getPost(slugName);
 
+  console.log("Metadata fetched post:", post); // ✅ Debug log
+
   if (!post) {
     return {
       title: "Post not found",
@@ -82,6 +84,8 @@ const page = async ({ params }) => {
   const { slugName } = params; // ✅ FIXED
 
   const data = await getPost(slugName);
+
+  console.log("Page fetched post:", data); // ✅ Debug log
 
   if (!data) {
     notFound();
