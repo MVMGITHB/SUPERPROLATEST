@@ -99,14 +99,14 @@ const nextConfig = {
     ];
   },
 
-  async rewrites() {
-    return [
-      {
-        source: "/api/:path*",
-        destination: "https://connect.couponsculture.com/api/:path*",
-      },
-    ];
-  },
+ rewrites() {
+  return [
+    {
+      source: "/api/:path*",
+      destination: "https://super.jobkityaari.com/api/:path*",
+    },
+  ];
+}
 };
 
 export default nextConfig;
