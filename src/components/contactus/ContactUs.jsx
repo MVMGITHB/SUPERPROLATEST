@@ -60,9 +60,9 @@ export default function ContactUs() {
       </p>
 
       {/* Address */}
-      <div className="mb-6 text-gray-700">
+      {/* <div className="mb-6 text-gray-700">
         📍 I Thum I.T. Park, Sector 62, Noida, Uttar Pradesh
-      </div>
+      </div> */}
 
       {/* Email Contact */}
       <div className="mb-8 flex items-center gap-3 text-gray-700">
